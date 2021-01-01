@@ -1,0 +1,15 @@
+{
+  "name": "my-project",
+  "version": "1.0.0",
+  "description": "CSS pipeline",
+  "main": "index.html",
+  "scripts": {
+    "dev": "dart-sass --watch ./src/scss/main.scss ./style.css",
+    "prebuild": "rm ./style.css.map && dart-sass --no-source-map ./src/scss/main.scss ./src/no-prefix.css",
+    "build": "postcss src/no-prefix.css --use autoprefixer -o ./style.css"
+  },
+  "license": "ISC",
+  "browserslist": [
+    "defaults"
+  ]
+}
