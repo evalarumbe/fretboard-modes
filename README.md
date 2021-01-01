@@ -15,7 +15,7 @@ Npm script walkthrough:
 
 # CSS pipeline
 
-This `package.json` file contains handy scripts that process CSS from dev to production as follows:
+The included `package.json` file contains handy scripts that process CSS from dev to production as follows:
 
 Sass => CSS => Autoprefixed CSS for whichever browsers you want to support
 
