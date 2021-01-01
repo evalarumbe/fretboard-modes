@@ -11,6 +11,7 @@ This pipeline hopes to make these workflow dreams come true:
 - We want to write Sass because it has nicer features than plain CSS.
 - We want to write modern CSS but still support older browsers.
 - We've heard that [vendor prefixes](https://autoprefixer.github.io/) can help with browser support ([with limitations](https://css-tricks.com/css-grid-in-ie-css-grid-and-the-new-autoprefixer/#autoprefixer-still-cant-save-you-from-everything)), but we want the prefixing to be handled automatically, so we don't have to think about it.
+- We want our code to run as fast as possible on the user's machine, so we want to make sure it's compressed it (i.e. [minified](https://www.imperva.com/learn/performance/minification/)).
 
 If that doesn't quite sound like your level yet, and some of those ideas are unfamiliar, check out the links to starter resources at [codemakesmecry.com](https://www.codemakesmecry.com/posts/css-pipeline)
 
