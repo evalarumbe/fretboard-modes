@@ -1,0 +1,603 @@
+@use '../variables/color' as *;
+
+@mixin ionian($row-offset: 0, $col-offset: 0) {
+  .ionian {
+    color: $ionian-text;
+    background-color: $ionian-bg;
+    border: 1px solid #{$ionian-text};
+
+    justify-content: start;
+    align-items: start;
+
+    &.oct-a.deg-1 {
+      grid-row: 6 + $row-offset;
+      grid-column: 2 + $col-offset;
+    }
+
+    &.oct-a.deg-2 {
+      grid-row: 6 + $row-offset; 
+      grid-column: 4 + $col-offset;
+    }
+
+    &.oct-a.deg-3 {
+      grid-row: 5 + $row-offset; 
+      grid-column: 1 + $col-offset;
+    }
+
+    &.oct-a.deg-4 {
+      grid-row: 5 + $row-offset; 
+      grid-column: 2 + $col-offset;
+    }
+
+    &.oct-a.deg-5 {
+      grid-row: 5 + $row-offset; 
+      grid-column: 4 + $col-offset;
+    }
+
+    &.oct-a.deg-6 {
+      grid-row: 4 + $row-offset; 
+      grid-column: 1 + $col-offset;
+    }
+
+    &.oct-a.deg-7 {
+      grid-row: 4 + $row-offset; 
+      grid-column: 3 + $col-offset;
+    }
+
+    &.oct-b.deg-1 {
+      grid-row: 4 + $row-offset; 
+      grid-column: 4 + $col-offset;
+    }
+
+    &.oct-b.deg-2 {
+      grid-row: 3 + $row-offset; 
+      grid-column: 1 + $col-offset;
+    }
+
+    &.oct-b.deg-3 {
+      grid-row: 3 + $row-offset; 
+      grid-column: 3 + $col-offset;
+    }
+
+    &.oct-b.deg-4 {
+      grid-row: 3 + $row-offset; 
+      grid-column: 4 + $col-offset;
+    }
+
+    &.oct-b.deg-5 {
+      grid-row: 2 + $row-offset; 
+      grid-column: 2 + $col-offset;
+    }
+
+    &.oct-b.deg-6 {
+      grid-row: 2 + $row-offset; 
+      grid-column: 4 + $col-offset;
+    }
+
+    &.oct-b.deg-7 {
+      grid-row: 1 + $row-offset; 
+      grid-column: 1 + $col-offset;
+    }
+
+    &.oct-c.deg-1 {
+      grid-row: 1 + $row-offset; 
+      grid-column: 2 + $col-offset;
+    }
+  }
+}
+
+@mixin dorian($row-offset: 0, $col-offset: 0) {
+  .dorian {
+    color: $dorian-text;
+    background-color: $dorian-bg;
+    border: 1px solid #{$dorian-text};
+    
+    justify-content: end;
+    align-items: start;
+
+    &.oct-a.deg-1 {
+      grid-row: 6 + $row-offset; 
+      grid-column: 4 + $col-offset;
+    }
+
+    &.oct-a.deg-2 {
+      grid-row: 6 + $row-offset; 
+      grid-column: 6 + $col-offset;
+    }
+
+    &.oct-a.deg-3 {
+      grid-row: 6 + $row-offset; 
+      grid-column: 7 + $col-offset;
+    }
+
+    &.oct-a.deg-4 {
+      grid-row: 5 + $row-offset; 
+      grid-column: 4 + $col-offset;
+    }
+
+    &.oct-a.deg-5 {
+      grid-row: 5 + $row-offset; 
+      grid-column: 6 + $col-offset;
+    }
+
+    &.oct-a.deg-6 {
+      grid-row: 4 + $row-offset; 
+      grid-column: 3 + $col-offset;
+    }
+
+    &.oct-a.deg-7 {
+      grid-row: 4 + $row-offset; 
+      grid-column: 4 + $col-offset;
+    }
+
+    &.oct-b.deg-1 {
+      grid-row: 4 + $row-offset; 
+      grid-column: 6 + $col-offset;
+    }
+
+    &.oct-b.deg-2 {
+      grid-row: 3 + $row-offset; 
+      grid-column: 3 + $col-offset;
+    }
+
+    &.oct-b.deg-3 {
+      grid-row: 3 + $row-offset; 
+      grid-column: 4 + $col-offset;
+    }
+
+    &.oct-b.deg-4 {
+      grid-row: 3 + $row-offset; 
+      grid-column: 6 + $col-offset;
+    }
+
+    &.oct-b.deg-5 {
+      grid-row: 2 + $row-offset; 
+      grid-column: 4 + $col-offset;
+    }
+
+    &.oct-b.deg-6 {
+      grid-row: 2 + $row-offset; 
+      grid-column: 6 + $col-offset;
+    }
+
+    &.oct-b.deg-7 {
+      grid-row: 2 + $row-offset; 
+      grid-column: 7 + $col-offset;
+    }
+
+    &.oct-c.deg-1 {
+      grid-row: 1 + $row-offset; 
+      grid-column: 4 + $col-offset;
+    }
+  }
+}
+
+@mixin phrygian($row-offset: 0, $col-offset: 0) {
+  .phrygian {
+    color: $phrygian-text;
+    background-color: $phrygian-bg;
+    border: 1px solid #{$phrygian-text};
+    
+    justify-content: end;
+    align-items: end;
+
+    &.oct-a.deg-1 {
+      grid-row: 6 + $row-offset; 
+      grid-column: 6 + $col-offset;
+    }
+
+    &.oct-a.deg-2 {
+      grid-row: 6 + $row-offset; 
+      grid-column: 7 + $col-offset;
+    }
+
+    &.oct-a.deg-3 {
+      grid-row: 6 + $row-offset; 
+      grid-column: 9 + $col-offset;
+    }
+
+    &.oct-a.deg-4 {
+      grid-row: 5 + $row-offset; 
+      grid-column: 6 + $col-offset;
+    }
+
+    &.oct-a.deg-5 {
+      grid-row: 5 + $row-offset; 
+      grid-column: 8 + $col-offset;
+    }
+
+    &.oct-a.deg-6 {
+      grid-row: 5 + $row-offset; 
+      grid-column: 9 + $col-offset;
+    }
+
+    &.oct-a.deg-7 {
+      grid-row: 4 + $row-offset; 
+      grid-column: 6 + $col-offset;
+    }
+
+    &.oct-b.deg-1 {
+      grid-row: 4 + $row-offset; 
+      grid-column: 8 + $col-offset;
+    }
+
+    &.oct-b.deg-2 {
+      grid-row: 4 + $row-offset; 
+      grid-column: 9 + $col-offset;
+    }
+
+    &.oct-b.deg-3 {
+      grid-row: 3 + $row-offset; 
+      grid-column: 6 + $col-offset;
+    }
+
+    &.oct-b.deg-4 {
+      grid-row: 3 + $row-offset; 
+      grid-column: 8 + $col-offset;
+    }
+
+    &.oct-b.deg-5 {
+      grid-row: 2 + $row-offset; 
+      grid-column: 6 + $col-offset;
+    }
+
+    &.oct-b.deg-6 {
+      grid-row: 2 + $row-offset; 
+      grid-column: 7 + $col-offset;
+    }
+
+    &.oct-b.deg-7 {
+      grid-row: 2 + $row-offset; 
+      grid-column: 9 + $col-offset;
+    }
+
+    &.oct-c.deg-1 {
+      grid-row: 1 + $row-offset; 
+      grid-column: 6 + $col-offset;
+    }
+  }
+}
+
+@mixin lydian($row-offset: 0, $col-offset: 0) {
+  .lydian {
+    color: $lydian-text;
+    background-color: $lydian-bg;
+    border: 1px solid #{$lydian-text};
+    
+    justify-content: start;
+    align-items: end;
+
+    &.oct-a.deg-1 {
+      grid-row: 6 + $row-offset; 
+      grid-column: 7 + $col-offset;
+    }
+
+    &.oct-a.deg-2 {
+      grid-row: 6 + $row-offset; 
+      grid-column: 9 + $col-offset;
+    }
+
+    &.oct-a.deg-3 {
+      grid-row: 5 + $row-offset; 
+      grid-column: 6 + $col-offset;
+    }
+
+    &.oct-a.deg-4 {
+      grid-row: 5 + $row-offset; 
+      grid-column: 8 + $col-offset;
+    }
+
+    &.oct-a.deg-5 {
+      grid-row: 5 + $row-offset; 
+      grid-column: 9 + $col-offset;
+    }
+
+    &.oct-a.deg-6 {
+      grid-row: 4 + $row-offset; 
+      grid-column: 6 + $col-offset;
+    }
+
+    &.oct-a.deg-7 {
+      grid-row: 4 + $row-offset; 
+      grid-column: 8 + $col-offset;
+    }
+
+    &.oct-b.deg-1 {
+      grid-row: 4 + $row-offset; 
+      grid-column: 9 + $col-offset;
+    }
+
+    &.oct-b.deg-2 {
+      grid-row: 3 + $row-offset; 
+      grid-column: 6 + $col-offset;
+    }
+
+    &.oct-b.deg-3 {
+      grid-row: 3 + $row-offset; 
+      grid-column: 8 + $col-offset;
+    }
+
+    &.oct-b.deg-4 {
+      grid-row: 2 + $row-offset; 
+      grid-column: 6 + $col-offset;
+    }
+
+    &.oct-b.deg-5 {
+      grid-row: 2 + $row-offset; 
+      grid-column: 7 + $col-offset;
+    }
+
+    &.oct-b.deg-6 {
+      grid-row: 2 + $row-offset; 
+      grid-column: 9 + $col-offset;
+    }
+
+    &.oct-b.deg-7 {
+      grid-row: 1 + $row-offset; 
+      grid-column: 6 + $col-offset;
+    }
+
+    &.oct-c.deg-1 {
+      grid-row: 1 + $row-offset; 
+      grid-column: 7 + $col-offset;
+    }
+  }
+}
+
+@mixin mixolydian($row-offset: 0, $col-offset: 0) {
+  .mixolydian {
+    color: $mixolydian-text;
+    background-color: $mixolydian-bg;
+    border: 1px solid #{$mixolydian-text};
+    
+    justify-content: start;
+    align-items: start;
+
+    &.oct-a.deg-1 {
+      grid-row: 6 + $row-offset;
+      grid-column: 9 + $col-offset;
+    }
+
+    &.oct-a.deg-2 {
+      grid-row: 6 + $row-offset; 
+      grid-column: 11 + $col-offset;
+    }
+
+    &.oct-a.deg-3 {
+      grid-row: 5 + $row-offset; 
+      grid-column: 8 + $col-offset;
+    }
+
+    &.oct-a.deg-4 {
+      grid-row: 5 + $row-offset; 
+      grid-column: 9 + $col-offset;
+    }
+
+    &.oct-a.deg-5 {
+      grid-row: 5 + $row-offset; 
+      grid-column: 11 + $col-offset;
+    }
+
+    &.oct-a.deg-6 {
+      grid-row: 4 + $row-offset; 
+      grid-column: 8 + $col-offset;
+    }
+
+    &.oct-a.deg-7 {
+      grid-row: 4 + $row-offset; 
+      grid-column: 9 + $col-offset;
+    }
+
+    &.oct-b.deg-1 {
+      grid-row: 4 + $row-offset; 
+      grid-column: 11 + $col-offset;
+    }
+
+    &.oct-b.deg-2 {
+      grid-row: 3 + $row-offset; 
+      grid-column: 8 + $col-offset;
+    }
+
+    &.oct-b.deg-3 {
+      grid-row: 3 + $row-offset; 
+      grid-column: 10 + $col-offset;
+    }
+
+    &.oct-b.deg-4 {
+      grid-row: 3 + $row-offset; 
+      grid-column: 11 + $col-offset;
+    }
+
+    &.oct-b.deg-5 {
+      grid-row: 2 + $row-offset; 
+      grid-column: 9 + $col-offset;
+    }
+
+    &.oct-b.deg-6 {
+      grid-row: 2 + $row-offset; 
+      grid-column: 11 + $col-offset;
+    }
+
+    &.oct-b.deg-7 {
+      grid-row: 2 + $row-offset; 
+      grid-column: 12 + $col-offset;
+    }
+
+    &.oct-c.deg-1 {
+      grid-row: 1 + $row-offset; 
+      grid-column: 9 + $col-offset;
+    }
+  }
+}
+
+@mixin aeolian($row-offset: 0, $col-offset: 0) {
+  .aeolian {
+    color: $aeolian-text;
+    background-color: $aeolian-bg;
+    border: 1px solid #{$aeolian-text};
+    
+    justify-content: end;
+    align-items: start;
+
+    &.oct-a.deg-1 {
+      grid-row: 6 + $row-offset; 
+      grid-column: 11 + $col-offset;
+    }
+
+    &.oct-a.deg-2 {
+      grid-row: 6 + $row-offset; 
+      grid-column: 13 + $col-offset;
+    }
+
+    &.oct-a.deg-3 {
+      grid-row: 6 + $row-offset; 
+      grid-column: 14 + $col-offset;
+    }
+
+    &.oct-a.deg-4 {
+      grid-row: 5 + $row-offset; 
+      grid-column: 11 + $col-offset;
+    }
+
+    &.oct-a.deg-5 {
+      grid-row: 5 + $row-offset; 
+      grid-column: 13 + $col-offset;
+    }
+
+    &.oct-a.deg-6 {
+      grid-row: 5 + $row-offset; 
+      grid-column: 14 + $col-offset;
+    }
+
+    &.oct-a.deg-7 {
+      grid-row: 4 + $row-offset; 
+      grid-column: 11 + $col-offset;
+    }
+
+    &.oct-b.deg-1 {
+      grid-row: 4 + $row-offset; 
+      grid-column: 13 + $col-offset;
+    }
+
+    &.oct-b.deg-2 {
+      grid-row: 3 + $row-offset; 
+      grid-column: 10 + $col-offset;
+    }
+
+    &.oct-b.deg-3 {
+      grid-row: 3 + $row-offset; 
+      grid-column: 11 + $col-offset;
+    }
+
+    &.oct-b.deg-4 {
+      grid-row: 3 + $row-offset; 
+      grid-column: 13 + $col-offset;
+    }
+
+    &.oct-b.deg-5 {
+      grid-row: 2 + $row-offset; 
+      grid-column: 11 + $col-offset;
+    }
+
+    &.oct-b.deg-6 {
+      grid-row: 2 + $row-offset; 
+      grid-column: 12 + $col-offset;
+    }
+
+    &.oct-b.deg-7 {
+      grid-row: 2 + $row-offset; 
+      grid-column: 14 + $col-offset;
+    }
+
+    &.oct-c.deg-1 {
+      grid-row: 1 + $row-offset; 
+      grid-column: 11 + $col-offset;
+    }
+  }
+}
+
+@mixin locrian($row-offset: 0, $col-offset: 0) {
+  .locrian {
+    color: $locrian-text;
+    background-color: $locrian-bg;
+    border: 1px solid #{$locrian-text};
+
+    justify-content: end;
+    align-items: end;
+
+    &.oct-a.deg-1 {
+      grid-row: 6 + $row-offset; 
+      grid-column: 13 + $col-offset;
+    }
+
+    &.oct-a.deg-2 {
+      grid-row: 6 + $row-offset; 
+      grid-column: 14 + $col-offset;
+    }
+
+    &.oct-a.deg-3 {
+      grid-row: 6 + $row-offset; 
+      grid-column: 16 + $col-offset;
+    }
+
+    &.oct-a.deg-4 {
+      grid-row: 5 + $row-offset; 
+      grid-column: 13 + $col-offset;
+    }
+
+    &.oct-a.deg-5 {
+      grid-row: 5 + $row-offset; 
+      grid-column: 14 + $col-offset;
+    }
+
+    &.oct-a.deg-6 {
+      grid-row: 5 + $row-offset; 
+      grid-column: 16 + $col-offset;
+    }
+
+    &.oct-a.deg-7 {
+      grid-row: 4 + $row-offset; 
+      grid-column: 13 + $col-offset;
+    }
+
+    &.oct-b.deg-1 {
+      grid-row: 4 + $row-offset; 
+      grid-column: 15 + $col-offset;
+    }
+
+    &.oct-b.deg-2 {
+      grid-row: 4 + $row-offset; 
+      grid-column: 16 + $col-offset;
+    }
+
+    &.oct-b.deg-3 {
+      grid-row: 3 + $row-offset; 
+      grid-column: 13 + $col-offset;
+    }
+
+    &.oct-b.deg-4 {
+      grid-row: 3 + $row-offset; 
+      grid-column: 15 + $col-offset;
+    }
+
+    &.oct-b.deg-5 {
+      grid-row: 3 + $row-offset; 
+      grid-column: 16 + $col-offset;
+    }
+
+    &.oct-b.deg-6 {
+      grid-row: 2 + $row-offset; 
+      grid-column: 14 + $col-offset;
+    }
+
+    &.oct-b.deg-7 {
+      grid-row: 2 + $row-offset; 
+      grid-column: 16 + $col-offset;
+    }
+
+    &.oct-c.deg-1 {
+      grid-row: 1 + $row-offset; 
+      grid-column: 13 + $col-offset;
+    }
+  }
+}
