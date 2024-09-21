@@ -14,66 +14,124 @@ html {
   }
 }
 
-.mode {
+body {
+  padding: 20px;
+}
+
+.fretboard {
   display: grid;
   grid-template-columns: repeat(auto-fit, 50px);
   grid-template-rows: repeat(6, 50px);
 }
-
-.ionian {
-  color: #0000ff;
-}
-.ionian p {
-  background-color: #00ffff;
-  border: 1px solid #0000ff;
+.fretboard p {
+  height: 3em;
+  width: 3em;
   display: grid;
-  justify-content: center;
-  align-items: center;
+  padding: 8px;
 }
-.ionian .a1 {
+.fretboard .ionian {
+  color: blue;
+  background-color: rgba(0, 255, 255, 0.5);
+  border: 1px solid blue;
+  justify-content: start;
+  align-items: start;
+}
+.fretboard .ionian.a1 {
   grid-area: 6/2;
 }
-.ionian .a2 {
+.fretboard .ionian.a2 {
   grid-area: 6/4;
 }
-.ionian .a3 {
+.fretboard .ionian.a3 {
   grid-area: 5/1;
 }
-.ionian .a4 {
+.fretboard .ionian.a4 {
   grid-area: 5/2;
 }
-.ionian .a5 {
+.fretboard .ionian.a5 {
   grid-area: 5/4;
 }
-.ionian .a6 {
+.fretboard .ionian.a6 {
   grid-area: 4/1;
 }
-.ionian .a7 {
+.fretboard .ionian.a7 {
   grid-area: 4/3;
 }
-.ionian .b1 {
+.fretboard .ionian.b1 {
   grid-area: 4/4;
 }
-.ionian .b2 {
+.fretboard .ionian.b2 {
   grid-area: 3/1;
 }
-.ionian .b3 {
+.fretboard .ionian.b3 {
   grid-area: 3/3;
 }
-.ionian .b4 {
+.fretboard .ionian.b4 {
   grid-area: 3/4;
 }
-.ionian .b5 {
+.fretboard .ionian.b5 {
   grid-area: 2/2;
 }
-.ionian .b6 {
+.fretboard .ionian.b6 {
   grid-area: 2/4;
 }
-.ionian .b7 {
+.fretboard .ionian.b7 {
   grid-area: 1/1;
 }
-.ionian .c1 {
+.fretboard .ionian.c1 {
   grid-area: 1/2;
+}
+.fretboard .dorian {
+  color: #a50349;
+  background-color: rgba(255, 0, 119, 0.347);
+  border: 1px solid #a50349;
+  justify-content: end;
+  align-items: start;
+}
+.fretboard .dorian.a1 {
+  grid-area: 6/4;
+}
+.fretboard .dorian.a2 {
+  grid-area: 6/6;
+}
+.fretboard .dorian.a3 {
+  grid-area: 6/7;
+}
+.fretboard .dorian.a4 {
+  grid-area: 5/4;
+}
+.fretboard .dorian.a5 {
+  grid-area: 5/6;
+}
+.fretboard .dorian.a6 {
+  grid-area: 4/3;
+}
+.fretboard .dorian.a7 {
+  grid-area: 4/4;
+}
+.fretboard .dorian.b1 {
+  grid-area: 4/6;
+}
+.fretboard .dorian.b2 {
+  grid-area: 3/3;
+}
+.fretboard .dorian.b3 {
+  grid-area: 3/4;
+}
+.fretboard .dorian.b4 {
+  grid-area: 3/6;
+}
+.fretboard .dorian.b5 {
+  grid-area: 2/4;
+}
+.fretboard .dorian.b6 {
+  grid-area: 2/6;
+}
+.fretboard .dorian.b7 {
+  grid-area: 2/7;
+}
+.fretboard .dorian.c1 {
+  grid-area: 1/4;
 }
 
 h1 {

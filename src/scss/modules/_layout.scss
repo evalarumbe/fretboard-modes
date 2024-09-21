@@ -1,79 +1,152 @@
 @use '../variables/color' as *;
 
-.mode {
+.fretboard {
   display: grid;
   grid-template-columns: repeat(auto-fit, 50px);
   grid-template-rows: repeat(6, 50px);
-}
-
-.ionian {
-  color: $ionian-text;
 
   p {
+    height: 3em;
+    width: 3em;
+    display: grid;
+    padding: 8px;
+  }
+
+  .ionian {
+    color: $ionian-text;
     background-color: $ionian-bg;
     border: 1px solid #{$ionian-text};
-    display: grid;
-    justify-content: center;
-    align-items: center;
+  
+    justify-content: start;
+    align-items: start;
+  
+    &.a1 {
+      grid-area: 6 / 2;
+    }
+  
+    &.a2 {
+      grid-area: 6 / 4;
+    }
+  
+    &.a3 {
+      grid-area: 5 / 1;
+    }
+  
+    &.a4 {
+      grid-area: 5 / 2;
+    }
+  
+    &.a5 {
+      grid-area: 5 / 4;
+    }
+  
+    &.a6 {
+      grid-area: 4 / 1;
+    }
+  
+    &.a7 {
+      grid-area: 4 / 3;
+    }
+  
+    &.b1 {
+      grid-area: 4 / 4;
+    }
+  
+    &.b2 {
+      grid-area: 3 / 1;
+    }
+  
+    &.b3 {
+      grid-area: 3 / 3;
+    }
+  
+    &.b4 {
+      grid-area: 3 / 4;
+    }
+  
+    &.b5 {
+      grid-area: 2 / 2;
+    }
+  
+    &.b6 {
+      grid-area: 2 / 4;
+    }
+  
+    &.b7 {
+      grid-area: 1 / 1;
+    }
+  
+    &.c1 {
+      grid-area: 1 / 2;
+    }
   }
-
-  .a1 {
-    grid-area: 6 / 2;
-  }
-
-  .a2 {
-    grid-area: 6 / 4;
-  }
-
-  .a3 {
-    grid-area: 5 / 1;
-  }
-
-  .a4 {
-    grid-area: 5 / 2;
-  }
-
-  .a5 {
-    grid-area: 5 / 4;
-  }
-
-  .a6 {
-    grid-area: 4 / 1;
-  }
-
-  .a7 {
-    grid-area: 4 / 3;
-  }
-
-  .b1 {
-    grid-area: 4 / 4;
-  }
-
-  .b2 {
-    grid-area: 3 / 1;
-  }
-
-  .b3 {
-    grid-area: 3 / 3;
-  }
-
-  .b4 {
-    grid-area: 3 / 4;
-  }
-
-  .b5 {
-    grid-area: 2 / 2;
-  }
-
-  .b6 {
-    grid-area: 2 / 4;
-  }
-
-  .b7 {
-    grid-area: 1 / 1;
-  }
-
-  .c1 {
-    grid-area: 1 / 2;
+  
+  .dorian {
+    color: $dorian-text;
+    background-color: $dorian-bg;
+    border: 1px solid #{$dorian-text};
+    
+    justify-content: end;
+    align-items: start;
+  
+    &.a1 {
+      grid-area: 6 / 4;
+    }
+  
+    &.a2 {
+      grid-area: 6 / 6;
+    }
+  
+    &.a3 {
+      grid-area: 6 / 7;
+    }
+  
+    &.a4 {
+      grid-area: 5 / 4;
+    }
+  
+    &.a5 {
+      grid-area: 5 / 6;
+    }
+  
+    &.a6 {
+      grid-area: 4 / 3;
+    }
+  
+    &.a7 {
+      grid-area: 4 / 4;
+    }
+  
+    &.b1 {
+      grid-area: 4 / 6;
+    }
+  
+    &.b2 {
+      grid-area: 3 / 3;
+    }
+  
+    &.b3 {
+      grid-area: 3 / 4;
+    }
+  
+    &.b4 {
+      grid-area: 3 / 6;
+    }
+  
+    &.b5 {
+      grid-area: 2 / 4;
+    }
+  
+    &.b6 {
+      grid-area: 2 / 6;
+    }
+  
+    &.b7 {
+      grid-area: 2 / 7;
+    }
+  
+    &.c1 {
+      grid-area: 1 / 4;
+    }
   }
 }
