@@ -1,0 +1,20 @@
+@use '../variables/size' as *;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: monospace;
+  // font-weight: normal !important; // TODO: remove. just testing.
+}
+
+html {
+  // a11y: By setting a % of the user agent font size,
+  // rem will be based on the user's preference.
+  // Read more: https://matejlatin.medium.com/5-keys-to-accessible-web-typography-2ff9de3157f5
+  font-size: 80%;
+  
+  @media (min-width: #{$tablet-p-lower}px) {
+    font-size: 100%;
+  }
+}

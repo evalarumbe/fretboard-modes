@@ -1,0 +1,13 @@
+// breakpoints
+
+// naming convention:
+// l = landscape
+// p = portrait
+// lower = use this number with min-width
+// (e.g. if we generalize that the width of a portrait tablet is 480-767px,
+// 480 is the lower bound)
+
+// usage:
+// @media (min-width: $tablet-p-lower + px)
+$tablet-p-lower: 480; // px
+$tablet-l-lower: 768; // px

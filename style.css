@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: monospace;
+}
+
+html {
+  font-size: 80%;
+}
+@media (min-width: 480px) {
+  html {
+    font-size: 100%;
+  }
+}
+
+.mode {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 50px);
+  grid-template-rows: repeat(6, 50px);
+}
+
+.ionian {
+  color: #0000ff;
+}
+.ionian p {
+  background-color: #00ffff;
+  border: 1px solid #0000ff;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+.ionian .a1 {
+  grid-area: 6/2;
+}
+.ionian .a2 {
+  grid-area: 6/4;
+}
+.ionian .a3 {
+  grid-area: 5/1;
+}
+.ionian .a4 {
+  grid-area: 5/2;
+}
+.ionian .a5 {
+  grid-area: 5/4;
+}
+.ionian .a6 {
+  grid-area: 4/1;
+}
+.ionian .a7 {
+  grid-area: 4/3;
+}
+.ionian .b1 {
+  grid-area: 4/4;
+}
+.ionian .b2 {
+  grid-area: 3/1;
+}
+.ionian .b3 {
+  grid-area: 3/3;
+}
+.ionian .b4 {
+  grid-area: 3/4;
+}
+.ionian .b5 {
+  grid-area: 2/2;
+}
+.ionian .b6 {
+  grid-area: 2/4;
+}
+.ionian .b7 {
+  grid-area: 1/1;
+}
+.ionian .c1 {
+  grid-area: 1/2;
+}
+
+h1 {
+  margin-bottom: 1em;
+}
+
+h2 {
+  margin-bottom: 0.8em;
+}
+
+/*# sourceMappingURL=style.css.map */
