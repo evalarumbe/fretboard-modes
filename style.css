@@ -27,58 +27,58 @@ body {
   height: 3em;
   width: 3em;
   display: grid;
-  padding: 8px;
+  padding: 2px;
 }
 .fretboard .ionian {
-  color: blue;
-  background-color: rgba(0, 255, 255, 0.5);
-  border: 1px solid blue;
+  color: #0000ac;
+  background-color: rgba(0, 51, 255, 0.3);
+  border: 1px solid #0000ac;
   justify-content: start;
   align-items: start;
 }
-.fretboard .ionian.a1 {
+.fretboard .ionian.oct-a.deg-1 {
   grid-area: 6/2;
 }
-.fretboard .ionian.a2 {
+.fretboard .ionian.oct-a.deg-2 {
   grid-area: 6/4;
 }
-.fretboard .ionian.a3 {
+.fretboard .ionian.oct-a.deg-3 {
   grid-area: 5/1;
 }
-.fretboard .ionian.a4 {
+.fretboard .ionian.oct-a.deg-4 {
   grid-area: 5/2;
 }
-.fretboard .ionian.a5 {
+.fretboard .ionian.oct-a.deg-5 {
   grid-area: 5/4;
 }
-.fretboard .ionian.a6 {
+.fretboard .ionian.oct-a.deg-6 {
   grid-area: 4/1;
 }
-.fretboard .ionian.a7 {
+.fretboard .ionian.oct-a.deg-7 {
   grid-area: 4/3;
 }
-.fretboard .ionian.b1 {
+.fretboard .ionian.oct-b.deg-1 {
   grid-area: 4/4;
 }
-.fretboard .ionian.b2 {
+.fretboard .ionian.oct-b.deg-2 {
   grid-area: 3/1;
 }
-.fretboard .ionian.b3 {
+.fretboard .ionian.oct-b.deg-3 {
   grid-area: 3/3;
 }
-.fretboard .ionian.b4 {
+.fretboard .ionian.oct-b.deg-4 {
   grid-area: 3/4;
 }
-.fretboard .ionian.b5 {
+.fretboard .ionian.oct-b.deg-5 {
   grid-area: 2/2;
 }
-.fretboard .ionian.b6 {
+.fretboard .ionian.oct-b.deg-6 {
   grid-area: 2/4;
 }
-.fretboard .ionian.b7 {
+.fretboard .ionian.oct-b.deg-7 {
   grid-area: 1/1;
 }
-.fretboard .ionian.c1 {
+.fretboard .ionian.oct-c.deg-1 {
   grid-area: 1/2;
 }
 .fretboard .dorian {
@@ -88,50 +88,258 @@ body {
   justify-content: end;
   align-items: start;
 }
-.fretboard .dorian.a1 {
+.fretboard .dorian.oct-a.deg-1 {
   grid-area: 6/4;
 }
-.fretboard .dorian.a2 {
+.fretboard .dorian.oct-a.deg-2 {
   grid-area: 6/6;
 }
-.fretboard .dorian.a3 {
+.fretboard .dorian.oct-a.deg-3 {
   grid-area: 6/7;
 }
-.fretboard .dorian.a4 {
+.fretboard .dorian.oct-a.deg-4 {
   grid-area: 5/4;
 }
-.fretboard .dorian.a5 {
+.fretboard .dorian.oct-a.deg-5 {
   grid-area: 5/6;
 }
-.fretboard .dorian.a6 {
+.fretboard .dorian.oct-a.deg-6 {
   grid-area: 4/3;
 }
-.fretboard .dorian.a7 {
+.fretboard .dorian.oct-a.deg-7 {
   grid-area: 4/4;
 }
-.fretboard .dorian.b1 {
+.fretboard .dorian.oct-b.deg-1 {
   grid-area: 4/6;
 }
-.fretboard .dorian.b2 {
+.fretboard .dorian.oct-b.deg-2 {
   grid-area: 3/3;
 }
-.fretboard .dorian.b3 {
+.fretboard .dorian.oct-b.deg-3 {
   grid-area: 3/4;
 }
-.fretboard .dorian.b4 {
+.fretboard .dorian.oct-b.deg-4 {
   grid-area: 3/6;
 }
-.fretboard .dorian.b5 {
+.fretboard .dorian.oct-b.deg-5 {
   grid-area: 2/4;
 }
-.fretboard .dorian.b6 {
+.fretboard .dorian.oct-b.deg-6 {
   grid-area: 2/6;
 }
-.fretboard .dorian.b7 {
+.fretboard .dorian.oct-b.deg-7 {
   grid-area: 2/7;
 }
-.fretboard .dorian.c1 {
+.fretboard .dorian.oct-c.deg-1 {
   grid-area: 1/4;
+}
+.fretboard .phrygian {
+  color: #d56413;
+  background-color: rgba(235, 120, 38, 0.3);
+  border: 1px solid #d56413;
+  justify-content: start;
+  align-items: end;
+}
+.fretboard .phrygian.oct-a.deg-1 {
+  grid-area: 6/6;
+}
+.fretboard .phrygian.oct-a.deg-2 {
+  grid-area: 6/7;
+}
+.fretboard .phrygian.oct-a.deg-3 {
+  grid-area: 6/9;
+}
+.fretboard .phrygian.oct-a.deg-4 {
+  grid-area: 5/6;
+}
+.fretboard .phrygian.oct-a.deg-5 {
+  grid-area: 5/8;
+}
+.fretboard .phrygian.oct-a.deg-6 {
+  grid-area: 5/9;
+}
+.fretboard .phrygian.oct-a.deg-7 {
+  grid-area: 4/6;
+}
+.fretboard .phrygian.oct-b.deg-1 {
+  grid-area: 4/8;
+}
+.fretboard .phrygian.oct-b.deg-2 {
+  grid-area: 4/9;
+}
+.fretboard .phrygian.oct-b.deg-3 {
+  grid-area: 3/6;
+}
+.fretboard .phrygian.oct-b.deg-4 {
+  grid-area: 3/8;
+}
+.fretboard .phrygian.oct-b.deg-5 {
+  grid-area: 2/6;
+}
+.fretboard .phrygian.oct-b.deg-6 {
+  grid-area: 2/7;
+}
+.fretboard .phrygian.oct-b.deg-7 {
+  grid-area: 2/9;
+}
+.fretboard .phrygian.oct-c.deg-1 {
+  grid-area: 1/6;
+}
+.fretboard .lydian {
+  color: #d88c13;
+  background-color: rgba(255, 200, 0, 0.3);
+  border: 1px solid #d88c13;
+  justify-content: start;
+  align-items: start;
+}
+.fretboard .lydian.oct-a.deg-1 {
+  grid-area: 6/7;
+}
+.fretboard .lydian.oct-a.deg-2 {
+  grid-area: 6/9;
+}
+.fretboard .lydian.oct-a.deg-3 {
+  grid-area: 5/6;
+}
+.fretboard .lydian.oct-a.deg-4 {
+  grid-area: 5/8;
+}
+.fretboard .lydian.oct-a.deg-5 {
+  grid-area: 5/9;
+}
+.fretboard .lydian.oct-a.deg-6 {
+  grid-area: 4/6;
+}
+.fretboard .lydian.oct-a.deg-7 {
+  grid-area: 4/8;
+}
+.fretboard .lydian.oct-b.deg-1 {
+  grid-area: 4/9;
+}
+.fretboard .lydian.oct-b.deg-2 {
+  grid-area: 3/6;
+}
+.fretboard .lydian.oct-b.deg-3 {
+  grid-area: 3/8;
+}
+.fretboard .lydian.oct-b.deg-4 {
+  grid-area: 2/6;
+}
+.fretboard .lydian.oct-b.deg-5 {
+  grid-area: 2/7;
+}
+.fretboard .lydian.oct-b.deg-6 {
+  grid-area: 2/9;
+}
+.fretboard .lydian.oct-b.deg-7 {
+  grid-area: 1/6;
+}
+.fretboard .lydian.oct-c.deg-1 {
+  grid-area: 1/7;
+}
+.fretboard .mixolydian {
+  color: #00b685;
+  background-color: rgba(0, 255, 179, 0.3);
+  border: 1px solid #00b685;
+  justify-content: start;
+  align-items: end;
+}
+.fretboard .mixolydian.oct-a.deg-1 {
+  grid-area: 6/9;
+}
+.fretboard .mixolydian.oct-a.deg-2 {
+  grid-area: 6/11;
+}
+.fretboard .mixolydian.oct-a.deg-3 {
+  grid-area: 5/8;
+}
+.fretboard .mixolydian.oct-a.deg-4 {
+  grid-area: 5/9;
+}
+.fretboard .mixolydian.oct-a.deg-5 {
+  grid-area: 5/11;
+}
+.fretboard .mixolydian.oct-a.deg-6 {
+  grid-area: 4/8;
+}
+.fretboard .mixolydian.oct-a.deg-7 {
+  grid-area: 4/9;
+}
+.fretboard .mixolydian.oct-b.deg-1 {
+  grid-area: 4/11;
+}
+.fretboard .mixolydian.oct-b.deg-2 {
+  grid-area: 3/8;
+}
+.fretboard .mixolydian.oct-b.deg-3 {
+  grid-area: 3/10;
+}
+.fretboard .mixolydian.oct-b.deg-4 {
+  grid-area: 3/11;
+}
+.fretboard .mixolydian.oct-b.deg-5 {
+  grid-area: 2/9;
+}
+.fretboard .mixolydian.oct-b.deg-6 {
+  grid-area: 2/11;
+}
+.fretboard .mixolydian.oct-b.deg-7 {
+  grid-area: 2/12;
+}
+.fretboard .mixolydian.oct-c.deg-1 {
+  grid-area: 1/9;
+}
+.fretboard .aeolian {
+  color: #0a8ea8;
+  background-color: rgba(0, 170, 255, 0.3);
+  border: 1px solid #0a8ea8;
+  justify-content: end;
+  align-items: end;
+}
+.fretboard .aeolian.oct-a.deg-1 {
+  grid-area: 6/11;
+}
+.fretboard .aeolian.oct-a.deg-2 {
+  grid-area: 6/13;
+}
+.fretboard .aeolian.oct-a.deg-3 {
+  grid-area: 6/14;
+}
+.fretboard .aeolian.oct-a.deg-4 {
+  grid-area: 5/11;
+}
+.fretboard .aeolian.oct-a.deg-5 {
+  grid-area: 5/13;
+}
+.fretboard .aeolian.oct-a.deg-6 {
+  grid-area: 5/14;
+}
+.fretboard .aeolian.oct-a.deg-7 {
+  grid-area: 4/11;
+}
+.fretboard .aeolian.oct-b.deg-1 {
+  grid-area: 4/13;
+}
+.fretboard .aeolian.oct-b.deg-2 {
+  grid-area: 3/10;
+}
+.fretboard .aeolian.oct-b.deg-3 {
+  grid-area: 3/11;
+}
+.fretboard .aeolian.oct-b.deg-4 {
+  grid-area: 3/13;
+}
+.fretboard .aeolian.oct-b.deg-5 {
+  grid-area: 2/11;
+}
+.fretboard .aeolian.oct-b.deg-6 {
+  grid-area: 2/12;
+}
+.fretboard .aeolian.oct-b.deg-7 {
+  grid-area: 2/14;
+}
+.fretboard .aeolian.oct-c.deg-1 {
+  grid-area: 1/11;
 }
 
 h1 {
