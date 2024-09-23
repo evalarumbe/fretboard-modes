@@ -11,11 +11,7 @@
 }
 
 @mixin mnemonic-cols-dorian {
-  grid-column:  ($col-start-ionian
-                + $col-span-ionian
-                + 1 //spacer
-                )
-                / span $col-span-dorian;
+  grid-column: $col-start-dorian / span $col-span-dorian;
 }
 
 @mixin mnemonic-spacer-after-dorian {
@@ -26,13 +22,7 @@
 }
 
 @mixin mnemonic-cols-phrygian {
-  grid-column:  ($col-start-ionian
-                + $col-span-ionian
-                + 1 //spacer
-                + $col-span-dorian
-                + 1 //spacer
-                )
-                / span $col-span-phrygian;
+  grid-column: $col-start-phrygian / span $col-span-phrygian;
 }
 
 @mixin mnemonic-spacer-after-phrygian {
@@ -45,15 +35,7 @@
 }
 
 @mixin mnemonic-cols-lydian {
-  grid-column:  ($col-start-ionian
-                + $col-span-ionian
-                + 1 //spacer
-                + $col-span-dorian
-                + 1 //spacer
-                + $col-span-phrygian
-                + 1 //spacer
-                )
-                / span $col-span-lydian;
+  grid-column: $col-start-lydian / span $col-span-lydian;
 }
 
 @mixin mnemonic-spacer-after-lydian {
@@ -68,17 +50,7 @@
 }
 
 @mixin mnemonic-cols-mixolydian {
-  grid-column:  ($col-start-ionian
-                + $col-span-ionian
-                + 1 //spacer
-                + $col-span-dorian
-                + 1 //spacer
-                + $col-span-phrygian
-                + 1 //spacer
-                + $col-span-lydian
-                + 1 //spacer
-                )
-                / span $col-span-mixolydian;
+  grid-column: $col-start-mixolydian / span $col-span-mixolydian;
 }
 
 @mixin mnemonic-spacer-after-mixolydian {
@@ -95,19 +67,7 @@
 }
 
 @mixin mnemonic-cols-aeolian {
-  grid-column:  ($col-start-ionian
-                + $col-span-ionian
-                + 1 //spacer
-                + $col-span-dorian
-                + 1 //spacer
-                + $col-span-phrygian
-                + 1 //spacer
-                + $col-span-lydian
-                + 1 //spacer
-                + $col-span-mixolydian
-                + 1 //spacer
-                )
-                / span $col-span-aeolian;
+  grid-column: $col-start-aeolian / span $col-span-aeolian;
 }
 
 @mixin mnemonic-spacer-after-aeolian {
@@ -126,21 +86,7 @@
 }
 
 @mixin mnemonic-cols-locrian {
-  grid-column:  ($col-start-ionian
-                + $col-span-ionian
-                + 1 //spacer
-                + $col-span-dorian
-                + 1 //spacer
-                + $col-span-phrygian
-                + 1 //spacer
-                + $col-span-lydian
-                + 1 //spacer
-                + $col-span-mixolydian
-                + 1 //spacer
-                + $col-span-aeolian
-                + 1 //spacer
-                )
-                / span $col-span-locrian;
+  grid-column: $col-start-locrian / span $col-span-locrian;
 }
 
 // row-factor represents how many grid rows appear per string. E.g. Two on the Mnemonic Grid, and 1 on the others.
