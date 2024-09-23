@@ -9,6 +9,7 @@
 
   .spacer {
     grid-row: 1 / #{$row-count} + 1;
+    width: 1em;
 
     &.after-ionian {
       @include mnemonic-spacer-after-ionian;
@@ -76,6 +77,7 @@
 
   .mnemonic.mnemonic {
     grid-row: 2;
+    padding-top: 1em;
 
     &.first {
       grid-row-start: $row-start-first;
@@ -150,6 +152,8 @@
   }
 
   .note {
+    height: 2em;
+    display: flex;
 
     &.ionian {
       @include shape-ionian(2, 2, $col-start-ionian);

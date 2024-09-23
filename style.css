@@ -67,6 +67,7 @@ body {
 }
 .mnemonic-grid .spacer {
   grid-row: 1/131;
+  width: 1em;
 }
 .mnemonic-grid .spacer.after-ionian {
   grid-column: 6;
@@ -119,6 +120,7 @@ body {
 }
 .mnemonic-grid .mnemonic.mnemonic {
   grid-row: 2;
+  padding-top: 1em;
 }
 .mnemonic-grid .mnemonic.mnemonic.first {
   grid-row-start: 2;
@@ -179,6 +181,10 @@ body {
 .mnemonic-grid .mode-name.mode-name.locrian,
 .mnemonic-grid .mnemonic.mnemonic.locrian {
   grid-column: 35/span 4;
+}
+.mnemonic-grid .note {
+  height: 2em;
+  display: flex;
 }
 .mnemonic-grid .note.ionian {
   justify-content: start;
