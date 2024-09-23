@@ -51,31 +51,31 @@
   // Default row values are based on a fretboard with 6 rows.
   // Since we want an extra heading row, let's add an offset.
   .ionian {
-    @include shape-ionian(1, 1, 0);
+    @include shape-ionian(1, 1, 1);
   }
 
   .dorian {
-    @include shape-dorian(1, 1, 0);
+    @include shape-dorian(1, 1, 3);
   }
 
   .phrygian {
-    @include shape-phrygian(1, 1, 0);
+    @include shape-phrygian(1, 1, 6);
   }
 
   .lydian {
-    @include shape-lydian(1, 1, 0);
+    @include shape-lydian(1, 1, 6);
   }
 
   .mixolydian {
-    @include shape-mixolydian(1, 1, 0);
+    @include shape-mixolydian(1, 1, 8);
   }
 
   .aeolian {
-    @include shape-aeolian(1, 1, 0);
+    @include shape-aeolian(1, 1, 10);
   }
 
   .locrian {
-    @include shape-locrian(1, 1, 0);
+    @include shape-locrian(1, 1, 13);
   }
 
   .fret {

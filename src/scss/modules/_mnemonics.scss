@@ -152,11 +152,37 @@
   .note {
 
     &.ionian {
-      @include shape-ionian(2, 2, 1);
+      @include shape-ionian(2, 2, $col-start-ionian);
     }
 
     &.dorian {
-      // @include shape-dorian(2, 2, 1);
+      @debug $col-start-dorian;
+      @include shape-dorian(2, 2, $col-start-dorian);
+    }
+
+    &.phrygian {
+      @debug $col-start-phrygian;
+      @include shape-phrygian(2, 2, $col-start-phrygian);
+    }
+
+    &.lydian {
+      @debug $col-start-lydian;
+      @include shape-lydian(2, 2, $col-start-lydian);
+    }
+
+    &.mixolydian {
+      @debug $col-start-mixolydian;
+      @include shape-mixolydian(2, 2, $col-start-mixolydian);
+    }
+
+    &.aeolian {
+      @debug $col-start-aeolian;
+      @include shape-aeolian(2, 2, $col-start-aeolian);
+    }
+
+    &.locrian {
+      @debug $col-start-locrian;
+      @include shape-locrian(2, 2, $col-start-locrian);
     }
 
     &.first {

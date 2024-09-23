@@ -37,57 +37,129 @@ $col-span-locrian: 4;
 
 
 $col-start-ionian: 2;
-$col-start-dorian: ($col-start-ionian
-                    + $col-span-ionian
-                    + 1 //spacer
-                    );
-$col-start-phrygian: ($col-start-ionian
-                      + $col-span-ionian
-                      + 1 //spacer
-                      + $col-span-dorian
-                      + 1 //spacer
-                      );
-$col-start-lydian: ($col-start-ionian
-                    + $col-span-ionian
-                    + 1 //spacer
-                    + $col-span-dorian
-                    + 1 //spacer
-                    + $col-span-phrygian
-                    + 1 //spacer
-                    );
-$col-start-mixolydian: ($col-start-ionian
-                        + $col-span-ionian
-                        + 1 //spacer
-                        + $col-span-dorian
-                        + 1 //spacer
-                        + $col-span-phrygian
-                        + 1 //spacer
-                        + $col-span-lydian
-                        + 1 //spacer
-                        );
-$col-start-aeolian: ($col-start-ionian
-                     + $col-span-ionian
-                     + 1 //spacer
-                     + $col-span-dorian
-                     + 1 //spacer
-                     + $col-span-phrygian
-                     + 1 //spacer
-                     + $col-span-lydian
-                     + 1 //spacer
-                     + $col-span-mixolydian
-                     + 1 //spacer
-                     );
-$col-start-locrian: ($col-start-ionian
-                     + $col-span-ionian
-                     + 1 //spacer
-                     + $col-span-dorian
-                     + 1 //spacer
-                     + $col-span-phrygian
-                     + 1 //spacer
-                     + $col-span-lydian
-                     + 1 //spacer
-                     + $col-span-mixolydian
-                     + 1 //spacer
-                     + $col-span-aeolian
-                     + 1 //spacer
-                     );
+
+$col-start-spacer-after-ionian: (
+  $col-start-ionian 
+  + $col-span-ionian
+);
+
+$col-start-dorian: (
+  $col-start-ionian
+  + $col-span-ionian
+  + 1 //spacer
+);
+
+$col-start-spacer-after-dorian: (
+  $col-start-ionian
+  + $col-span-ionian
+  + 1 //spacer
+  + $col-span-dorian
+);
+
+$col-start-phrygian: (
+  $col-start-ionian
+  + $col-span-ionian
+  + 1 //spacer
+  + $col-span-dorian
+  + 1 //spacer
+);
+
+$col-start-spacer-after-phrygian: (
+  $col-start-ionian
+  + $col-span-ionian
+  + 1 //spacer
+  + $col-span-dorian
+  + 1 //spacer
+  + $col-span-phrygian
+);
+
+$col-start-lydian: (
+  $col-start-ionian
+  + $col-span-ionian
+  + 1 //spacer
+  + $col-span-dorian
+  + 1 //spacer
+  + $col-span-phrygian
+  + 1 //spacer
+);
+
+$col-start-spacer-after-lydian: (
+  $col-start-ionian
+  + $col-span-ionian
+  + 1 //spacer
+  + $col-span-dorian
+  + 1 //spacer
+  + $col-span-phrygian
+  + 1 //spacer
+  + $col-span-lydian
+);
+
+$col-start-mixolydian: (
+  $col-start-ionian
+  + $col-span-ionian
+  + 1 //spacer
+  + $col-span-dorian
+  + 1 //spacer
+  + $col-span-phrygian
+  + 1 //spacer
+  + $col-span-lydian
+  + 1 //spacer
+);
+
+$col-start-spacer-after-mixolydian: (
+  $col-start-ionian
+  + $col-span-ionian
+  + 1 //spacer
+  + $col-span-dorian
+  + 1 //spacer
+  + $col-span-phrygian
+  + 1 //spacer
+  + $col-span-lydian
+  + 1 //spacer
+  + $col-span-mixolydian
+);
+
+$col-start-aeolian: (
+  $col-start-ionian
+  + $col-span-ionian
+  + 1 //spacer
+  + $col-span-dorian
+  + 1 //spacer
+  + $col-span-phrygian
+  + 1 //spacer
+  + $col-span-lydian
+  + 1 //spacer
+  + $col-span-mixolydian
+  + 1 //spacer
+);
+
+$col-start-spacer-after-aeolian: (
+  $col-start-ionian
+  + $col-span-ionian
+  + 1 //spacer
+  + $col-span-dorian
+  + 1 //spacer
+  + $col-span-phrygian
+  + 1 //spacer
+  + $col-span-lydian
+  + 1 //spacer
+  + $col-span-mixolydian
+  + 1 //spacer
+  + $col-span-aeolian
+);
+
+$col-start-locrian: (
+  $col-start-ionian
+  + $col-span-ionian
+  + 1 //spacer
+  + $col-span-dorian
+  + 1 //spacer
+  + $col-span-phrygian
+  + 1 //spacer
+  + $col-span-lydian
+  + 1 //spacer
+  + $col-span-mixolydian
+  + 1 //spacer
+  + $col-span-aeolian
+  + 1 //spacer
+);
