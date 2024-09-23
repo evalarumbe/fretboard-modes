@@ -50,13 +50,33 @@
 
   // Default row values are based on a fretboard with 6 rows.
   // Since we want an extra heading row, let's add an offset.
-  @include shape-ionian(1, 0);
-  @include shape-dorian(1, 0);
-  @include shape-phrygian(1, 0);
-  @include shape-lydian(1, 0);
-  @include shape-mixolydian(1, 0);
-  @include shape-aeolian(1, 0);
-  @include shape-locrian(1, 0);
+  .ionian {
+    @include shape-ionian(1, 1, 0);
+  }
+
+  .dorian {
+    @include shape-dorian(1, 1, 0);
+  }
+
+  .phrygian {
+    @include shape-phrygian(1, 1, 0);
+  }
+
+  .lydian {
+    @include shape-lydian(1, 1, 0);
+  }
+
+  .mixolydian {
+    @include shape-mixolydian(1, 1, 0);
+  }
+
+  .aeolian {
+    @include shape-aeolian(1, 1, 0);
+  }
+
+  .locrian {
+    @include shape-locrian(1, 1, 0);
+  }
 
   .fret {
     grid-row: 8;
@@ -115,13 +135,34 @@
 
   // Default row values are based on a fretboard with 6 rows.
   // Since we want an extra heading row, let's add an offset.
-  @include shape-ionian(1, 0);
-  @include shape-dorian(1, 0);
-  @include shape-phrygian(1, 0);
-  @include shape-lydian(1, 0);
-  @include shape-mixolydian(1, 0);
-  @include shape-aeolian(1, 0);
-  @include shape-locrian(1, 0);
+  .ionian {
+    @include shape-ionian(1, 1, 0);
+  }
+
+  .dorian {
+    @include shape-dorian(1, 1, 0);
+  }
+
+  .phrygian {
+    @include shape-phrygian(1, 1, 0);
+  }
+
+  .lydian {
+    @include shape-lydian(1, 1, 0);
+  }
+
+  .mixolydian {
+    @include shape-mixolydian(1, 1, 0);
+  }
+
+  .aeolian {
+    @include shape-aeolian(1, 1, 0);
+  }
+
+  .locrian {
+    @include shape-locrian(1, 1, 0);
+  }
+
 
   .fret {
     grid-row: 8;
@@ -180,13 +221,34 @@
 
   // Default row values are based on a fretboard with 6 rows.
   // Since we want an extra heading row, let's add an offset.
-  @include shape-ionian(1, 0);
-  @include shape-dorian(1, 0);
-  @include shape-phrygian(1, 0);
-  @include shape-lydian(1, 0);
-  @include shape-mixolydian(1, 0);
-  @include shape-aeolian(1, 0);
-  @include shape-locrian(1, 0);
+  .ionian {
+    @include shape-ionian(1, 1, 0);
+  }
+
+  .dorian {
+    @include shape-dorian(1, 1, 0);
+  }
+
+  .phrygian {
+    @include shape-phrygian(1, 1, 0);
+  }
+
+  .lydian {
+    @include shape-lydian(1, 1, 0);
+  }
+
+  .mixolydian {
+    @include shape-mixolydian(1, 1, 0);
+  }
+
+  .aeolian {
+    @include shape-aeolian(1, 1, 0);
+  }
+
+  .locrian {
+    @include shape-locrian(1, 1, 0);
+  }
+
 
   .fret {
     grid-row: 8;
@@ -245,13 +307,34 @@
 
   // Default row values are based on a fretboard with 6 rows.
   // Since we want an extra heading row, let's add an offset.
-  @include shape-ionian(1, 0);
-  @include shape-dorian(1, 0);
-  @include shape-phrygian(1, 0);
-  @include shape-lydian(1, 0);
-  @include shape-mixolydian(1, 0);
-  @include shape-aeolian(1, 0);
-  @include shape-locrian(1, 0);
+  .ionian {
+    @include shape-ionian(1, 1, 0);
+  }
+
+  .dorian {
+    @include shape-dorian(1, 1, 0);
+  }
+
+  .phrygian {
+    @include shape-phrygian(1, 1, 0);
+  }
+
+  .lydian {
+    @include shape-lydian(1, 1, 0);
+  }
+
+  .mixolydian {
+    @include shape-mixolydian(1, 1, 0);
+  }
+
+  .aeolian {
+    @include shape-aeolian(1, 1, 0);
+  }
+
+  .locrian {
+    @include shape-locrian(1, 1, 0);
+  }
+
 
   .fret {
     grid-row: 8;
@@ -310,13 +393,34 @@
 
   // Default row values are based on a fretboard with 6 rows.
   // Since we want an extra heading row, let's add an offset.
-  @include shape-ionian(1, 0);
-  @include shape-dorian(1, 0);
-  @include shape-phrygian(1, 0);
-  @include shape-lydian(1, 0);
-  @include shape-mixolydian(1, 0);
-  @include shape-aeolian(1, 0);
-  @include shape-locrian(1, 0);
+  .ionian {
+    @include shape-ionian(1, 1, 0);
+  }
+
+  .dorian {
+    @include shape-dorian(1, 1, 0);
+  }
+
+  .phrygian {
+    @include shape-phrygian(1, 1, 0);
+  }
+
+  .lydian {
+    @include shape-lydian(1, 1, 0);
+  }
+
+  .mixolydian {
+    @include shape-mixolydian(1, 1, 0);
+  }
+
+  .aeolian {
+    @include shape-aeolian(1, 1, 0);
+  }
+
+  .locrian {
+    @include shape-locrian(1, 1, 0);
+  }
+
 
   .fret {
     grid-row: 8;
@@ -375,13 +479,33 @@
 
   // Default row values are based on a fretboard with 6 rows.
   // Since we want an extra heading row, let's add an offset.
-  @include shape-ionian(1, 0);
-  @include shape-dorian(1, 0);
-  @include shape-phrygian(1, 0);
-  @include shape-lydian(1, 0);
-  @include shape-mixolydian(1, 0);
-  @include shape-aeolian(1, 0);
-  @include shape-locrian(1, 0);
+  .ionian {
+    @include shape-ionian(1, 1, 0);
+  }
+
+  .dorian {
+    @include shape-dorian(1, 1, 0);
+  }
+
+  .phrygian {
+    @include shape-phrygian(1, 1, 0);
+  }
+
+  .lydian {
+    @include shape-lydian(1, 1, 0);
+  }
+
+  .mixolydian {
+    @include shape-mixolydian(1, 1, 0);
+  }
+
+  .aeolian {
+    @include shape-aeolian(1, 1, 0);
+  }
+
+  .locrian {
+    @include shape-locrian(1, 1, 0);
+  }
 
   .fret {
     grid-row: 8;

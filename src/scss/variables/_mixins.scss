@@ -143,576 +143,563 @@
                 / span $col-span-locrian;
 }
 
-@mixin shape-ionian($row-offset: 0, $col-offset: 0) {
-  .ionian {
-    justify-content: start;
-    align-items: start;
+// row-factor represents how many grid rows appear per string. E.g. Two on the Mnemonic Grid, and 1 on the others.
+@mixin shape-ionian($row-factor: 1, $row-offset: 0, $col-offset: 0) {
+  justify-content: start;
+  align-items: start;
 
-    &.oct-a.deg-1 {
-      grid-row: 6 + $row-offset;
-      grid-column: 2 + $col-offset;
-    }
+  &.oct-a.deg-1 {
+    grid-row: (6 * $row-factor) + $row-offset;
+    grid-column: 2 + $col-offset;
+  }
 
-    &.oct-a.deg-2 {
-      grid-row: 6 + $row-offset; 
-      grid-column: 4 + $col-offset;
-    }
+  &.oct-a.deg-2 {
+    grid-row: (6 * $row-factor) + $row-offset; 
+    grid-column: 4 + $col-offset;
+  }
 
-    &.oct-a.deg-3 {
-      grid-row: 5 + $row-offset; 
-      grid-column: 1 + $col-offset;
-    }
+  &.oct-a.deg-3 {
+    grid-row: (5 * $row-factor) + $row-offset; 
+    grid-column: 1 + $col-offset;
+  }
 
-    &.oct-a.deg-4 {
-      grid-row: 5 + $row-offset; 
-      grid-column: 2 + $col-offset;
-    }
+  &.oct-a.deg-4 {
+    grid-row: (5 * $row-factor) + $row-offset; 
+    grid-column: 2 + $col-offset;
+  }
 
-    &.oct-a.deg-5 {
-      grid-row: 5 + $row-offset; 
-      grid-column: 4 + $col-offset;
-    }
+  &.oct-a.deg-5 {
+    grid-row: (5 * $row-factor) + $row-offset; 
+    grid-column: 4 + $col-offset;
+  }
 
-    &.oct-a.deg-6 {
-      grid-row: 4 + $row-offset; 
-      grid-column: 1 + $col-offset;
-    }
+  &.oct-a.deg-6 {
+    grid-row: (4 * $row-factor) + $row-offset; 
+    grid-column: 1 + $col-offset;
+  }
 
-    &.oct-a.deg-7 {
-      grid-row: 4 + $row-offset; 
-      grid-column: 3 + $col-offset;
-    }
+  &.oct-a.deg-7 {
+    grid-row: (4 * $row-factor) + $row-offset; 
+    grid-column: 3 + $col-offset;
+  }
 
-    &.oct-b.deg-1 {
-      grid-row: 4 + $row-offset; 
-      grid-column: 4 + $col-offset;
-    }
+  &.oct-b.deg-1 {
+    grid-row: (4 * $row-factor) + $row-offset; 
+    grid-column: 4 + $col-offset;
+  }
 
-    &.oct-b.deg-2 {
-      grid-row: 3 + $row-offset; 
-      grid-column: 1 + $col-offset;
-    }
+  &.oct-b.deg-2 {
+    grid-row: (3 * $row-factor) + $row-offset; 
+    grid-column: 1 + $col-offset;
+  }
 
-    &.oct-b.deg-3 {
-      grid-row: 3 + $row-offset; 
-      grid-column: 3 + $col-offset;
-    }
+  &.oct-b.deg-3 {
+    grid-row: (3 * $row-factor) + $row-offset; 
+    grid-column: 3 + $col-offset;
+  }
 
-    &.oct-b.deg-4 {
-      grid-row: 3 + $row-offset; 
-      grid-column: 4 + $col-offset;
-    }
+  &.oct-b.deg-4 {
+    grid-row: (3 * $row-factor) + $row-offset; 
+    grid-column: 4 + $col-offset;
+  }
 
-    &.oct-b.deg-5 {
-      grid-row: 2 + $row-offset; 
-      grid-column: 2 + $col-offset;
-    }
+  &.oct-b.deg-5 {
+    grid-row: (2 * $row-factor) + $row-offset; 
+    grid-column: 2 + $col-offset;
+  }
 
-    &.oct-b.deg-6 {
-      grid-row: 2 + $row-offset; 
-      grid-column: 4 + $col-offset;
-    }
+  &.oct-b.deg-6 {
+    grid-row: (2 * $row-factor) + $row-offset; 
+    grid-column: 4 + $col-offset;
+  }
 
-    &.oct-b.deg-7 {
-      grid-row: 1 + $row-offset; 
-      grid-column: 1 + $col-offset;
-    }
+  &.oct-b.deg-7 {
+    grid-row: (1 * $row-factor) + $row-offset; 
+    grid-column: 1 + $col-offset;
+  }
 
-    &.oct-c.deg-1 {
-      grid-row: 1 + $row-offset; 
-      grid-column: 2 + $col-offset;
-    }
+  &.oct-c.deg-1 {
+    grid-row: (1 * $row-factor) + $row-offset; 
+    grid-column: 2 + $col-offset;
   }
 }
 
-@mixin shape-dorian($row-offset: 0, $col-offset: 0) {
-  .dorian {
-    justify-content: end;
-    align-items: start;
+@mixin shape-dorian($row-factor: 1, $row-offset: 0, $col-offset: 0) {
+  justify-content: end;
+  align-items: start;
 
-    &.oct-a.deg-1 {
-      grid-row: 6 + $row-offset; 
-      grid-column: 4 + $col-offset;
-    }
+  &.oct-a.deg-1 {
+    grid-row: (6 * $row-factor) + $row-offset; 
+    grid-column: 4 + $col-offset;
+  }
 
-    &.oct-a.deg-2 {
-      grid-row: 6 + $row-offset; 
-      grid-column: 6 + $col-offset;
-    }
+  &.oct-a.deg-2 {
+    grid-row: (6 * $row-factor) + $row-offset; 
+    grid-column: 6 + $col-offset;
+  }
 
-    &.oct-a.deg-3 {
-      grid-row: 6 + $row-offset; 
-      grid-column: 7 + $col-offset;
-    }
+  &.oct-a.deg-3 {
+    grid-row: (6 * $row-factor) + $row-offset; 
+    grid-column: 7 + $col-offset;
+  }
 
-    &.oct-a.deg-4 {
-      grid-row: 5 + $row-offset; 
-      grid-column: 4 + $col-offset;
-    }
+  &.oct-a.deg-4 {
+    grid-row: (5 * $row-factor) + $row-offset; 
+    grid-column: 4 + $col-offset;
+  }
 
-    &.oct-a.deg-5 {
-      grid-row: 5 + $row-offset; 
-      grid-column: 6 + $col-offset;
-    }
+  &.oct-a.deg-5 {
+    grid-row: (5 * $row-factor) + $row-offset; 
+    grid-column: 6 + $col-offset;
+  }
 
-    &.oct-a.deg-6 {
-      grid-row: 4 + $row-offset; 
-      grid-column: 3 + $col-offset;
-    }
+  &.oct-a.deg-6 {
+    grid-row: (4 * $row-factor) + $row-offset; 
+    grid-column: 3 + $col-offset;
+  }
 
-    &.oct-a.deg-7 {
-      grid-row: 4 + $row-offset; 
-      grid-column: 4 + $col-offset;
-    }
+  &.oct-a.deg-7 {
+    grid-row: (4 * $row-factor) + $row-offset; 
+    grid-column: 4 + $col-offset;
+  }
 
-    &.oct-b.deg-1 {
-      grid-row: 4 + $row-offset; 
-      grid-column: 6 + $col-offset;
-    }
+  &.oct-b.deg-1 {
+    grid-row: (4 * $row-factor) + $row-offset; 
+    grid-column: 6 + $col-offset;
+  }
 
-    &.oct-b.deg-2 {
-      grid-row: 3 + $row-offset; 
-      grid-column: 3 + $col-offset;
-    }
+  &.oct-b.deg-2 {
+    grid-row: (3 * $row-factor) + $row-offset; 
+    grid-column: 3 + $col-offset;
+  }
 
-    &.oct-b.deg-3 {
-      grid-row: 3 + $row-offset; 
-      grid-column: 4 + $col-offset;
-    }
+  &.oct-b.deg-3 {
+    grid-row: (3 * $row-factor) + $row-offset; 
+    grid-column: 4 + $col-offset;
+  }
 
-    &.oct-b.deg-4 {
-      grid-row: 3 + $row-offset; 
-      grid-column: 6 + $col-offset;
-    }
+  &.oct-b.deg-4 {
+    grid-row: (3 * $row-factor) + $row-offset; 
+    grid-column: 6 + $col-offset;
+  }
 
-    &.oct-b.deg-5 {
-      grid-row: 2 + $row-offset; 
-      grid-column: 4 + $col-offset;
-    }
+  &.oct-b.deg-5 {
+    grid-row: (2 * $row-factor) + $row-offset; 
+    grid-column: 4 + $col-offset;
+  }
 
-    &.oct-b.deg-6 {
-      grid-row: 2 + $row-offset; 
-      grid-column: 6 + $col-offset;
-    }
+  &.oct-b.deg-6 {
+    grid-row: (2 * $row-factor) + $row-offset; 
+    grid-column: 6 + $col-offset;
+  }
 
-    &.oct-b.deg-7 {
-      grid-row: 2 + $row-offset; 
-      grid-column: 7 + $col-offset;
-    }
+  &.oct-b.deg-7 {
+    grid-row: (2 * $row-factor) + $row-offset; 
+    grid-column: 7 + $col-offset;
+  }
 
-    &.oct-c.deg-1 {
-      grid-row: 1 + $row-offset; 
-      grid-column: 4 + $col-offset;
-    }
+  &.oct-c.deg-1 {
+    grid-row: (1 * $row-factor) + $row-offset; 
+    grid-column: 4 + $col-offset;
   }
 }
 
-@mixin shape-phrygian($row-offset: 0, $col-offset: 0) {
-  .phrygian {
-    justify-content: end;
-    align-items: end;
+@mixin shape-phrygian($row-factor: 1, $row-offset: 0, $col-offset: 0) {
+  justify-content: end;
+  align-items: end;
 
-    &.oct-a.deg-1 {
-      grid-row: 6 + $row-offset; 
-      grid-column: 6 + $col-offset;
-    }
+  &.oct-a.deg-1 {
+    grid-row: (6 * $row-factor) + $row-offset; 
+    grid-column: 6 + $col-offset;
+  }
 
-    &.oct-a.deg-2 {
-      grid-row: 6 + $row-offset; 
-      grid-column: 7 + $col-offset;
-    }
+  &.oct-a.deg-2 {
+    grid-row: (6 * $row-factor) + $row-offset; 
+    grid-column: 7 + $col-offset;
+  }
 
-    &.oct-a.deg-3 {
-      grid-row: 6 + $row-offset; 
-      grid-column: 9 + $col-offset;
-    }
+  &.oct-a.deg-3 {
+    grid-row: (6 * $row-factor) + $row-offset; 
+    grid-column: 9 + $col-offset;
+  }
 
-    &.oct-a.deg-4 {
-      grid-row: 5 + $row-offset; 
-      grid-column: 6 + $col-offset;
-    }
+  &.oct-a.deg-4 {
+    grid-row: (5 * $row-factor) + $row-offset; 
+    grid-column: 6 + $col-offset;
+  }
 
-    &.oct-a.deg-5 {
-      grid-row: 5 + $row-offset; 
-      grid-column: 8 + $col-offset;
-    }
+  &.oct-a.deg-5 {
+    grid-row: (5 * $row-factor) + $row-offset; 
+    grid-column: 8 + $col-offset;
+  }
 
-    &.oct-a.deg-6 {
-      grid-row: 5 + $row-offset; 
-      grid-column: 9 + $col-offset;
-    }
+  &.oct-a.deg-6 {
+    grid-row: (5 * $row-factor) + $row-offset; 
+    grid-column: 9 + $col-offset;
+  }
 
-    &.oct-a.deg-7 {
-      grid-row: 4 + $row-offset; 
-      grid-column: 6 + $col-offset;
-    }
+  &.oct-a.deg-7 {
+    grid-row: (4 * $row-factor) + $row-offset; 
+    grid-column: 6 + $col-offset;
+  }
 
-    &.oct-b.deg-1 {
-      grid-row: 4 + $row-offset; 
-      grid-column: 8 + $col-offset;
-    }
+  &.oct-b.deg-1 {
+    grid-row: (4 * $row-factor) + $row-offset; 
+    grid-column: 8 + $col-offset;
+  }
 
-    &.oct-b.deg-2 {
-      grid-row: 4 + $row-offset; 
-      grid-column: 9 + $col-offset;
-    }
+  &.oct-b.deg-2 {
+    grid-row: (4 * $row-factor) + $row-offset; 
+    grid-column: 9 + $col-offset;
+  }
 
-    &.oct-b.deg-3 {
-      grid-row: 3 + $row-offset; 
-      grid-column: 6 + $col-offset;
-    }
+  &.oct-b.deg-3 {
+    grid-row: (3 * $row-factor) + $row-offset; 
+    grid-column: 6 + $col-offset;
+  }
 
-    &.oct-b.deg-4 {
-      grid-row: 3 + $row-offset; 
-      grid-column: 8 + $col-offset;
-    }
+  &.oct-b.deg-4 {
+    grid-row: (3 * $row-factor) + $row-offset; 
+    grid-column: 8 + $col-offset;
+  }
 
-    &.oct-b.deg-5 {
-      grid-row: 2 + $row-offset; 
-      grid-column: 6 + $col-offset;
-    }
+  &.oct-b.deg-5 {
+    grid-row: (2 * $row-factor) + $row-offset; 
+    grid-column: 6 + $col-offset;
+  }
 
-    &.oct-b.deg-6 {
-      grid-row: 2 + $row-offset; 
-      grid-column: 7 + $col-offset;
-    }
+  &.oct-b.deg-6 {
+    grid-row: (2 * $row-factor) + $row-offset; 
+    grid-column: 7 + $col-offset;
+  }
 
-    &.oct-b.deg-7 {
-      grid-row: 2 + $row-offset; 
-      grid-column: 9 + $col-offset;
-    }
+  &.oct-b.deg-7 {
+    grid-row: (2 * $row-factor) + $row-offset; 
+    grid-column: 9 + $col-offset;
+  }
 
-    &.oct-c.deg-1 {
-      grid-row: 1 + $row-offset; 
-      grid-column: 6 + $col-offset;
-    }
+  &.oct-c.deg-1 {
+    grid-row: (1 * $row-factor) + $row-offset; 
+    grid-column: 6 + $col-offset;
   }
 }
 
-@mixin shape-lydian($row-offset: 0, $col-offset: 0) {
-  .lydian {
-    justify-content: start;
-    align-items: end;
+@mixin shape-lydian($row-factor: 1, $row-offset: 0, $col-offset: 0) {
+  justify-content: start;
+  align-items: end;
 
-    &.oct-a.deg-1 {
-      grid-row: 6 + $row-offset; 
-      grid-column: 7 + $col-offset;
-    }
+  &.oct-a.deg-1 {
+    grid-row: (6 * $row-factor) + $row-offset; 
+    grid-column: 7 + $col-offset;
+  }
 
-    &.oct-a.deg-2 {
-      grid-row: 6 + $row-offset; 
-      grid-column: 9 + $col-offset;
-    }
+  &.oct-a.deg-2 {
+    grid-row: (6 * $row-factor) + $row-offset; 
+    grid-column: 9 + $col-offset;
+  }
 
-    &.oct-a.deg-3 {
-      grid-row: 5 + $row-offset; 
-      grid-column: 6 + $col-offset;
-    }
+  &.oct-a.deg-3 {
+    grid-row: (5 * $row-factor) + $row-offset; 
+    grid-column: 6 + $col-offset;
+  }
 
-    &.oct-a.deg-4 {
-      grid-row: 5 + $row-offset; 
-      grid-column: 8 + $col-offset;
-    }
+  &.oct-a.deg-4 {
+    grid-row: (5 * $row-factor) + $row-offset; 
+    grid-column: 8 + $col-offset;
+  }
 
-    &.oct-a.deg-5 {
-      grid-row: 5 + $row-offset; 
-      grid-column: 9 + $col-offset;
-    }
+  &.oct-a.deg-5 {
+    grid-row: (5 * $row-factor) + $row-offset; 
+    grid-column: 9 + $col-offset;
+  }
 
-    &.oct-a.deg-6 {
-      grid-row: 4 + $row-offset; 
-      grid-column: 6 + $col-offset;
-    }
+  &.oct-a.deg-6 {
+    grid-row: (4 * $row-factor) + $row-offset; 
+    grid-column: 6 + $col-offset;
+  }
 
-    &.oct-a.deg-7 {
-      grid-row: 4 + $row-offset; 
-      grid-column: 8 + $col-offset;
-    }
+  &.oct-a.deg-7 {
+    grid-row: (4 * $row-factor) + $row-offset; 
+    grid-column: 8 + $col-offset;
+  }
 
-    &.oct-b.deg-1 {
-      grid-row: 4 + $row-offset; 
-      grid-column: 9 + $col-offset;
-    }
+  &.oct-b.deg-1 {
+    grid-row: (4 * $row-factor) + $row-offset; 
+    grid-column: 9 + $col-offset;
+  }
 
-    &.oct-b.deg-2 {
-      grid-row: 3 + $row-offset; 
-      grid-column: 6 + $col-offset;
-    }
+  &.oct-b.deg-2 {
+    grid-row: (3 * $row-factor) + $row-offset; 
+    grid-column: 6 + $col-offset;
+  }
 
-    &.oct-b.deg-3 {
-      grid-row: 3 + $row-offset; 
-      grid-column: 8 + $col-offset;
-    }
+  &.oct-b.deg-3 {
+    grid-row: (3 * $row-factor) + $row-offset; 
+    grid-column: 8 + $col-offset;
+  }
 
-    &.oct-b.deg-4 {
-      grid-row: 2 + $row-offset; 
-      grid-column: 6 + $col-offset;
-    }
+  &.oct-b.deg-4 {
+    grid-row: (2 * $row-factor) + $row-offset; 
+    grid-column: 6 + $col-offset;
+  }
 
-    &.oct-b.deg-5 {
-      grid-row: 2 + $row-offset; 
-      grid-column: 7 + $col-offset;
-    }
+  &.oct-b.deg-5 {
+    grid-row: (2 * $row-factor) + $row-offset; 
+    grid-column: 7 + $col-offset;
+  }
 
-    &.oct-b.deg-6 {
-      grid-row: 2 + $row-offset; 
-      grid-column: 9 + $col-offset;
-    }
+  &.oct-b.deg-6 {
+    grid-row: (2 * $row-factor) + $row-offset; 
+    grid-column: 9 + $col-offset;
+  }
 
-    &.oct-b.deg-7 {
-      grid-row: 1 + $row-offset; 
-      grid-column: 6 + $col-offset;
-    }
+  &.oct-b.deg-7 {
+    grid-row: (1 * $row-factor) + $row-offset; 
+    grid-column: 6 + $col-offset;
+  }
 
-    &.oct-c.deg-1 {
-      grid-row: 1 + $row-offset; 
-      grid-column: 7 + $col-offset;
-    }
+  &.oct-c.deg-1 {
+    grid-row: (1 * $row-factor) + $row-offset; 
+    grid-column: 7 + $col-offset;
   }
 }
 
-@mixin shape-mixolydian($row-offset: 0, $col-offset: 0) {
-  .mixolydian {
-    justify-content: start;
-    align-items: start;
+@mixin shape-mixolydian($row-factor: 1, $row-offset: 0, $col-offset: 0) {
+  justify-content: start;
+  align-items: start;
 
-    &.oct-a.deg-1 {
-      grid-row: 6 + $row-offset;
-      grid-column: 9 + $col-offset;
-    }
+  &.oct-a.deg-1 {
+    grid-row: (6 * $row-factor) + $row-offset;
+    grid-column: 9 + $col-offset;
+  }
 
-    &.oct-a.deg-2 {
-      grid-row: 6 + $row-offset; 
-      grid-column: 11 + $col-offset;
-    }
+  &.oct-a.deg-2 {
+    grid-row: (6 * $row-factor) + $row-offset; 
+    grid-column: 11 + $col-offset;
+  }
 
-    &.oct-a.deg-3 {
-      grid-row: 5 + $row-offset; 
-      grid-column: 8 + $col-offset;
-    }
+  &.oct-a.deg-3 {
+    grid-row: (5 * $row-factor) + $row-offset; 
+    grid-column: 8 + $col-offset;
+  }
 
-    &.oct-a.deg-4 {
-      grid-row: 5 + $row-offset; 
-      grid-column: 9 + $col-offset;
-    }
+  &.oct-a.deg-4 {
+    grid-row: (5 * $row-factor) + $row-offset; 
+    grid-column: 9 + $col-offset;
+  }
 
-    &.oct-a.deg-5 {
-      grid-row: 5 + $row-offset; 
-      grid-column: 11 + $col-offset;
-    }
+  &.oct-a.deg-5 {
+    grid-row: (5 * $row-factor) + $row-offset; 
+    grid-column: 11 + $col-offset;
+  }
 
-    &.oct-a.deg-6 {
-      grid-row: 4 + $row-offset; 
-      grid-column: 8 + $col-offset;
-    }
+  &.oct-a.deg-6 {
+    grid-row: (4 * $row-factor) + $row-offset; 
+    grid-column: 8 + $col-offset;
+  }
 
-    &.oct-a.deg-7 {
-      grid-row: 4 + $row-offset; 
-      grid-column: 9 + $col-offset;
-    }
+  &.oct-a.deg-7 {
+    grid-row: (4 * $row-factor) + $row-offset; 
+    grid-column: 9 + $col-offset;
+  }
 
-    &.oct-b.deg-1 {
-      grid-row: 4 + $row-offset; 
-      grid-column: 11 + $col-offset;
-    }
+  &.oct-b.deg-1 {
+    grid-row: (4 * $row-factor) + $row-offset; 
+    grid-column: 11 + $col-offset;
+  }
 
-    &.oct-b.deg-2 {
-      grid-row: 3 + $row-offset; 
-      grid-column: 8 + $col-offset;
-    }
+  &.oct-b.deg-2 {
+    grid-row: (3 * $row-factor) + $row-offset; 
+    grid-column: 8 + $col-offset;
+  }
 
-    &.oct-b.deg-3 {
-      grid-row: 3 + $row-offset; 
-      grid-column: 10 + $col-offset;
-    }
+  &.oct-b.deg-3 {
+    grid-row: (3 * $row-factor) + $row-offset; 
+    grid-column: 10 + $col-offset;
+  }
 
-    &.oct-b.deg-4 {
-      grid-row: 3 + $row-offset; 
-      grid-column: 11 + $col-offset;
-    }
+  &.oct-b.deg-4 {
+    grid-row: (3 * $row-factor) + $row-offset; 
+    grid-column: 11 + $col-offset;
+  }
 
-    &.oct-b.deg-5 {
-      grid-row: 2 + $row-offset; 
-      grid-column: 9 + $col-offset;
-    }
+  &.oct-b.deg-5 {
+    grid-row: (2 * $row-factor) + $row-offset; 
+    grid-column: 9 + $col-offset;
+  }
 
-    &.oct-b.deg-6 {
-      grid-row: 2 + $row-offset; 
-      grid-column: 11 + $col-offset;
-    }
+  &.oct-b.deg-6 {
+    grid-row: (2 * $row-factor) + $row-offset; 
+    grid-column: 11 + $col-offset;
+  }
 
-    &.oct-b.deg-7 {
-      grid-row: 2 + $row-offset; 
-      grid-column: 12 + $col-offset;
-    }
+  &.oct-b.deg-7 {
+    grid-row: (2 * $row-factor) + $row-offset; 
+    grid-column: 12 + $col-offset;
+  }
 
-    &.oct-c.deg-1 {
-      grid-row: 1 + $row-offset; 
-      grid-column: 9 + $col-offset;
-    }
+  &.oct-c.deg-1 {
+    grid-row: (1 * $row-factor) + $row-offset; 
+    grid-column: 9 + $col-offset;
   }
 }
 
-@mixin shape-aeolian($row-offset: 0, $col-offset: 0) {
-  .aeolian {
-    justify-content: end;
-    align-items: start;
+@mixin shape-aeolian($row-factor: 1, $row-offset: 0, $col-offset: 0) {
+  justify-content: end;
+  align-items: start;
 
-    &.oct-a.deg-1 {
-      grid-row: 6 + $row-offset; 
-      grid-column: 11 + $col-offset;
-    }
+  &.oct-a.deg-1 {
+    grid-row: (6 * $row-factor) + $row-offset; 
+    grid-column: 11 + $col-offset;
+  }
 
-    &.oct-a.deg-2 {
-      grid-row: 6 + $row-offset; 
-      grid-column: 13 + $col-offset;
-    }
+  &.oct-a.deg-2 {
+    grid-row: (6 * $row-factor) + $row-offset; 
+    grid-column: 13 + $col-offset;
+  }
 
-    &.oct-a.deg-3 {
-      grid-row: 6 + $row-offset; 
-      grid-column: 14 + $col-offset;
-    }
+  &.oct-a.deg-3 {
+    grid-row: (6 * $row-factor) + $row-offset; 
+    grid-column: 14 + $col-offset;
+  }
 
-    &.oct-a.deg-4 {
-      grid-row: 5 + $row-offset; 
-      grid-column: 11 + $col-offset;
-    }
+  &.oct-a.deg-4 {
+    grid-row: (5 * $row-factor) + $row-offset; 
+    grid-column: 11 + $col-offset;
+  }
 
-    &.oct-a.deg-5 {
-      grid-row: 5 + $row-offset; 
-      grid-column: 13 + $col-offset;
-    }
+  &.oct-a.deg-5 {
+    grid-row: (5 * $row-factor) + $row-offset; 
+    grid-column: 13 + $col-offset;
+  }
 
-    &.oct-a.deg-6 {
-      grid-row: 5 + $row-offset; 
-      grid-column: 14 + $col-offset;
-    }
+  &.oct-a.deg-6 {
+    grid-row: (5 * $row-factor) + $row-offset; 
+    grid-column: 14 + $col-offset;
+  }
 
-    &.oct-a.deg-7 {
-      grid-row: 4 + $row-offset; 
-      grid-column: 11 + $col-offset;
-    }
+  &.oct-a.deg-7 {
+    grid-row: (4 * $row-factor) + $row-offset; 
+    grid-column: 11 + $col-offset;
+  }
 
-    &.oct-b.deg-1 {
-      grid-row: 4 + $row-offset; 
-      grid-column: 13 + $col-offset;
-    }
+  &.oct-b.deg-1 {
+    grid-row: (4 * $row-factor) + $row-offset; 
+    grid-column: 13 + $col-offset;
+  }
 
-    &.oct-b.deg-2 {
-      grid-row: 3 + $row-offset; 
-      grid-column: 10 + $col-offset;
-    }
+  &.oct-b.deg-2 {
+    grid-row: (3 * $row-factor) + $row-offset; 
+    grid-column: 10 + $col-offset;
+  }
 
-    &.oct-b.deg-3 {
-      grid-row: 3 + $row-offset; 
-      grid-column: 11 + $col-offset;
-    }
+  &.oct-b.deg-3 {
+    grid-row: (3 * $row-factor) + $row-offset; 
+    grid-column: 11 + $col-offset;
+  }
 
-    &.oct-b.deg-4 {
-      grid-row: 3 + $row-offset; 
-      grid-column: 13 + $col-offset;
-    }
+  &.oct-b.deg-4 {
+    grid-row: (3 * $row-factor) + $row-offset; 
+    grid-column: 13 + $col-offset;
+  }
 
-    &.oct-b.deg-5 {
-      grid-row: 2 + $row-offset; 
-      grid-column: 11 + $col-offset;
-    }
+  &.oct-b.deg-5 {
+    grid-row: (2 * $row-factor) + $row-offset; 
+    grid-column: 11 + $col-offset;
+  }
 
-    &.oct-b.deg-6 {
-      grid-row: 2 + $row-offset; 
-      grid-column: 12 + $col-offset;
-    }
+  &.oct-b.deg-6 {
+    grid-row: (2 * $row-factor) + $row-offset; 
+    grid-column: 12 + $col-offset;
+  }
 
-    &.oct-b.deg-7 {
-      grid-row: 2 + $row-offset; 
-      grid-column: 14 + $col-offset;
-    }
+  &.oct-b.deg-7 {
+    grid-row: (2 * $row-factor) + $row-offset; 
+    grid-column: 14 + $col-offset;
+  }
 
-    &.oct-c.deg-1 {
-      grid-row: 1 + $row-offset; 
-      grid-column: 11 + $col-offset;
-    }
+  &.oct-c.deg-1 {
+    grid-row: (1 * $row-factor) + $row-offset; 
+    grid-column: 11 + $col-offset;
   }
 }
 
-@mixin shape-locrian($row-offset: 0, $col-offset: 0) {
-  .locrian {
-    justify-content: end;
-    align-items: end;
+@mixin shape-locrian($row-factor: 1, $row-offset: 0, $col-offset: 0) {
+  justify-content: end;
+  align-items: end;
 
-    &.oct-a.deg-1 {
-      grid-row: 6 + $row-offset; 
-      grid-column: 13 + $col-offset;
-    }
+  &.oct-a.deg-1 {
+    grid-row: (6 * $row-factor) + $row-offset; 
+    grid-column: 13 + $col-offset;
+  }
 
-    &.oct-a.deg-2 {
-      grid-row: 6 + $row-offset; 
-      grid-column: 14 + $col-offset;
-    }
+  &.oct-a.deg-2 {
+    grid-row: (6 * $row-factor) + $row-offset; 
+    grid-column: 14 + $col-offset;
+  }
 
-    &.oct-a.deg-3 {
-      grid-row: 6 + $row-offset; 
-      grid-column: 16 + $col-offset;
-    }
+  &.oct-a.deg-3 {
+    grid-row: (6 * $row-factor) + $row-offset; 
+    grid-column: 16 + $col-offset;
+  }
 
-    &.oct-a.deg-4 {
-      grid-row: 5 + $row-offset; 
-      grid-column: 13 + $col-offset;
-    }
+  &.oct-a.deg-4 {
+    grid-row: (5 * $row-factor) + $row-offset; 
+    grid-column: 13 + $col-offset;
+  }
 
-    &.oct-a.deg-5 {
-      grid-row: 5 + $row-offset; 
-      grid-column: 14 + $col-offset;
-    }
+  &.oct-a.deg-5 {
+    grid-row: (5 * $row-factor) + $row-offset; 
+    grid-column: 14 + $col-offset;
+  }
 
-    &.oct-a.deg-6 {
-      grid-row: 5 + $row-offset; 
-      grid-column: 16 + $col-offset;
-    }
+  &.oct-a.deg-6 {
+    grid-row: (5 * $row-factor) + $row-offset; 
+    grid-column: 16 + $col-offset;
+  }
 
-    &.oct-a.deg-7 {
-      grid-row: 4 + $row-offset; 
-      grid-column: 13 + $col-offset;
-    }
+  &.oct-a.deg-7 {
+    grid-row: (4 * $row-factor) + $row-offset; 
+    grid-column: 13 + $col-offset;
+  }
 
-    &.oct-b.deg-1 {
-      grid-row: 4 + $row-offset; 
-      grid-column: 15 + $col-offset;
-    }
+  &.oct-b.deg-1 {
+    grid-row: (4 * $row-factor) + $row-offset; 
+    grid-column: 15 + $col-offset;
+  }
 
-    &.oct-b.deg-2 {
-      grid-row: 4 + $row-offset; 
-      grid-column: 16 + $col-offset;
-    }
+  &.oct-b.deg-2 {
+    grid-row: (4 * $row-factor) + $row-offset; 
+    grid-column: 16 + $col-offset;
+  }
 
-    &.oct-b.deg-3 {
-      grid-row: 3 + $row-offset; 
-      grid-column: 13 + $col-offset;
-    }
+  &.oct-b.deg-3 {
+    grid-row: (3 * $row-factor) + $row-offset; 
+    grid-column: 13 + $col-offset;
+  }
 
-    &.oct-b.deg-4 {
-      grid-row: 3 + $row-offset; 
-      grid-column: 15 + $col-offset;
-    }
+  &.oct-b.deg-4 {
+    grid-row: (3 * $row-factor) + $row-offset; 
+    grid-column: 15 + $col-offset;
+  }
 
-    &.oct-b.deg-5 {
-      grid-row: 3 + $row-offset; 
-      grid-column: 16 + $col-offset;
-    }
+  &.oct-b.deg-5 {
+    grid-row: (3 * $row-factor) + $row-offset; 
+    grid-column: 16 + $col-offset;
+  }
 
-    &.oct-b.deg-6 {
-      grid-row: 2 + $row-offset; 
-      grid-column: 14 + $col-offset;
-    }
+  &.oct-b.deg-6 {
+    grid-row: (2 * $row-factor) + $row-offset; 
+    grid-column: 14 + $col-offset;
+  }
 
-    &.oct-b.deg-7 {
-      grid-row: 2 + $row-offset; 
-      grid-column: 16 + $col-offset;
-    }
+  &.oct-b.deg-7 {
+    grid-row: (2 * $row-factor) + $row-offset; 
+    grid-column: 16 + $col-offset;
+  }
 
-    &.oct-c.deg-1 {
-      grid-row: 1 + $row-offset; 
-      grid-column: 13 + $col-offset;
-    }
+  &.oct-c.deg-1 {
+    grid-row: (1 * $row-factor) + $row-offset; 
+    grid-column: 13 + $col-offset;
   }
 }

@@ -116,6 +116,7 @@
     }
   }
 
+  // Span the right number of frets per mode
   .mode-name.mode-name,
   .mnemonic.mnemonic {
     border: none;
@@ -147,6 +148,41 @@
   
     &.locrian {
       @include mnemonic-cols-locrian;
+    }
+  }
+
+  .note {
+
+    &.ionian {
+      @include shape-ionian(2, 2, 1);
+    }
+
+    &.dorian {
+      // @include shape-dorian(2, 2, 1);
+    }
+
+    &.first {
+      grid-row: $row-start-first + 1;
+    }
+
+    &.second {
+      grid-row: $row-start-second + 1;
+    }
+
+    &.third {
+      grid-row: $row-start-third + 1;
+    }
+
+    &.fourth {
+      grid-row: $row-start-fourth + 1;
+    }
+
+    &.fifth {
+      grid-row: $row-start-fifth + 1;
+    }
+
+    &.sixth {
+      grid-row: $row-start-sixth + 1;
     }
   }
 }
