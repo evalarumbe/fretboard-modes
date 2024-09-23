@@ -2,3 +2,36 @@ $rows-per-string: 2;
 
 $row-count: 1 // Mode name
             + $rows-per-string * 6; // 2 per string
+
+
+$col-start-ionian: 2;
+
+$col-count:  1   // String name
+            + 4   // Frets in Ionian
+            + 1   // spacer
+            + 5   // Frets in Dorian
+            + 1   // spacer
+            + 4   // Frets in Phrygian
+            + 1   // spacer
+            + 4   // Frets in Lydian
+            + 1   // spacer
+            + 5   // Frets in Mixolydian
+            + 1   // spacer
+            + 5   // Frets in Aeolian
+            + 1   // spacer
+            + 4;  // Frets in Locrian
+
+$col-span-ionian: 4;
+$col-span-dorian: 5;
+$col-span-phrygian: 4;
+$col-span-lydian: 4;
+$col-span-mixolydian: 5;
+$col-span-aeolian: 5;
+$col-span-locrian: 4;
+
+$row-start-first: 2;
+$row-start-second: 1 + (2 * $rows-per-string);
+$row-start-third: 1 + (3 * $rows-per-string);
+$row-start-fourth: 1 + (4 * $rows-per-string);
+$row-start-fifth: 1 + (5 * $rows-per-string);
+$row-start-sixth: 1 + (6 * $rows-per-string);

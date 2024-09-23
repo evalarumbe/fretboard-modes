@@ -5,7 +5,7 @@
 .mnemonic-grid {
   display: grid;
   grid-template-rows: repeat($row-count, auto);
-  grid-template-columns: repeat($mnemonic-col-count, auto);
+  grid-template-columns: repeat($col-count, auto);
 
   .spacer {
     grid-row: 1 / #{$row-count} + 1;
@@ -41,32 +41,32 @@
     grid-column: 1;
 
     &.first {
-      @include mnemonic-row-start-first;
+      grid-row-start: $row-start-first;
       grid-row-end: span $rows-per-string;
     }
 
     &.second {
-      @include mnemonic-row-start-second;
+      grid-row-start: $row-start-second;
       grid-row-end: span $rows-per-string;
     }
 
     &.third {
-      @include mnemonic-row-start-third;
+      grid-row-start: $row-start-third;
       grid-row-end: span $rows-per-string;
     }
 
     &.fourth {
-      @include mnemonic-row-start-fourth;
+      grid-row-start: $row-start-fourth;
       grid-row-end: span $rows-per-string;
     }
 
     &.fifth {
-      @include mnemonic-row-start-fifth;
+      grid-row-start: $row-start-fifth;
       grid-row-end: span $rows-per-string;
     }
 
     &.sixth {
-      @include mnemonic-row-start-sixth;
+      grid-row-start: $row-start-sixth;
       grid-row-end: span $rows-per-string;
     }
   }
@@ -78,6 +78,30 @@
 
   .mnemonic.mnemonic {
     grid-row: 2;
+
+    &.first {
+      grid-row-start: $row-start-first;
+    }
+
+    &.second {
+      grid-row-start: $row-start-second;
+    }
+
+    &.third {
+      grid-row-start: $row-start-third;
+    }
+
+    &.fourth {
+      grid-row-start: $row-start-fourth;
+    }
+
+    &.fifth {
+      grid-row-start: $row-start-fifth;
+    }
+
+    &.sixth {
+      grid-row-start: $row-start-sixth;
+    }
 
     &.left {
       text-align: left;

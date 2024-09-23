@@ -122,6 +122,24 @@ body {
 .mnemonic-grid .mnemonic.mnemonic {
   grid-row: 2;
 }
+.mnemonic-grid .mnemonic.mnemonic.first {
+  grid-row-start: 2;
+}
+.mnemonic-grid .mnemonic.mnemonic.second {
+  grid-row-start: 5;
+}
+.mnemonic-grid .mnemonic.mnemonic.third {
+  grid-row-start: 7;
+}
+.mnemonic-grid .mnemonic.mnemonic.fourth {
+  grid-row-start: 9;
+}
+.mnemonic-grid .mnemonic.mnemonic.fifth {
+  grid-row-start: 11;
+}
+.mnemonic-grid .mnemonic.mnemonic.sixth {
+  grid-row-start: 13;
+}
 .mnemonic-grid .mnemonic.mnemonic.left {
   text-align: left;
 }

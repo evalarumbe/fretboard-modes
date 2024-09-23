@@ -1,201 +1,146 @@
 @use '../variables/color' as *;
 @use '../variables/mnemonic-grid' as *;
 
-$mnemonic-col-start-ionian: 2;
-
-$mnemonic-col-count:  1   // String name
-              + 4   // Frets in Ionian
-              + 1   // spacer
-              + 5   // Frets in Dorian
-              + 1   // spacer
-              + 4   // Frets in Phrygian
-              + 1   // spacer
-              + 4   // Frets in Lydian
-              + 1   // spacer
-              + 5   // Frets in Mixolydian
-              + 1   // spacer
-              + 5   // Frets in Aeolian
-              + 1   // spacer
-              + 4;  // Frets in Locrian
-
-  $mnemonic-col-span-ionian: 4;
-  $mnemonic-col-span-dorian: 5;
-  $mnemonic-col-span-phrygian: 4;
-  $mnemonic-col-span-lydian: 4;
-  $mnemonic-col-span-mixolydian: 5;
-  $mnemonic-col-span-aeolian: 5;
-  $mnemonic-col-span-locrian: 4;
-
-@mixin mnemonic-row-start-first {
-  $row-start: 2;
-  grid-row-start: $row-start;
-}
-
-@mixin mnemonic-row-start-second {
-  $row-start: 1 + (2 * $rows-per-string);
-  grid-row-start: $row-start;
-}
-
-@mixin mnemonic-row-start-third {
-  $row-start: 1 + (3 * $rows-per-string);
-  grid-row-start: $row-start;
-}
-
-@mixin mnemonic-row-start-fourth {
-  $row-start: 1 + (4 * $rows-per-string);
-  grid-row-start: $row-start;
-}
-
-@mixin mnemonic-row-start-fifth {
-  $row-start: 1 + (5 * $rows-per-string);
-  grid-row-start: $row-start;
-}
-
-@mixin mnemonic-row-start-sixth {
-  $row-start: 1 + (6 * $rows-per-string);
-  grid-row-start: $row-start;
-}
-
 @mixin mnemonic-cols-ionian {
-  grid-column: $mnemonic-col-start-ionian / span $mnemonic-col-span-ionian;
+  grid-column: $col-start-ionian / span $col-span-ionian;
 }
 
 @mixin mnemonic-spacer-after-ionian {
-  grid-column:  ($mnemonic-col-start-ionian
-                + $mnemonic-col-span-ionian);
+  grid-column:  ($col-start-ionian
+                + $col-span-ionian);
 }
 
 @mixin mnemonic-cols-dorian {
-  grid-column:  ($mnemonic-col-start-ionian
-                + $mnemonic-col-span-ionian
+  grid-column:  ($col-start-ionian
+                + $col-span-ionian
                 + 1 //spacer
                 )
-                / span $mnemonic-col-span-dorian;
+                / span $col-span-dorian;
 }
 
 @mixin mnemonic-spacer-after-dorian {
-  grid-column:  ($mnemonic-col-start-ionian
-                + $mnemonic-col-span-ionian)
+  grid-column:  ($col-start-ionian
+                + $col-span-ionian)
                 + 1 //spacer
-                + $mnemonic-col-span-dorian;
+                + $col-span-dorian;
 }
 
 @mixin mnemonic-cols-phrygian {
-  grid-column:  ($mnemonic-col-start-ionian
-                + $mnemonic-col-span-ionian
+  grid-column:  ($col-start-ionian
+                + $col-span-ionian
                 + 1 //spacer
-                + $mnemonic-col-span-dorian
+                + $col-span-dorian
                 + 1 //spacer
                 )
-                / span $mnemonic-col-span-phrygian;
+                / span $col-span-phrygian;
 }
 
 @mixin mnemonic-spacer-after-phrygian {
-  grid-column:  ($mnemonic-col-start-ionian
-                + $mnemonic-col-span-ionian)
+  grid-column:  ($col-start-ionian
+                + $col-span-ionian)
                 + 1 //spacer
-                + $mnemonic-col-span-dorian
+                + $col-span-dorian
                 + 1 //spacer
-                + $mnemonic-col-span-phrygian;
+                + $col-span-phrygian;
 }
 
 @mixin mnemonic-cols-lydian {
-  grid-column:  ($mnemonic-col-start-ionian
-                + $mnemonic-col-span-ionian
+  grid-column:  ($col-start-ionian
+                + $col-span-ionian
                 + 1 //spacer
-                + $mnemonic-col-span-dorian
+                + $col-span-dorian
                 + 1 //spacer
-                + $mnemonic-col-span-phrygian
+                + $col-span-phrygian
                 + 1 //spacer
                 )
-                / span $mnemonic-col-span-lydian;
+                / span $col-span-lydian;
 }
 
 @mixin mnemonic-spacer-after-lydian {
-  grid-column:  ($mnemonic-col-start-ionian
-                + $mnemonic-col-span-ionian)
+  grid-column:  ($col-start-ionian
+                + $col-span-ionian)
                 + 1 //spacer
-                + $mnemonic-col-span-dorian
+                + $col-span-dorian
                 + 1 //spacer
-                + $mnemonic-col-span-phrygian
+                + $col-span-phrygian
                 + 1 //spacer
-                + $mnemonic-col-span-lydian;
+                + $col-span-lydian;
 }
 
 @mixin mnemonic-cols-mixolydian {
-  grid-column:  ($mnemonic-col-start-ionian
-                + $mnemonic-col-span-ionian
+  grid-column:  ($col-start-ionian
+                + $col-span-ionian
                 + 1 //spacer
-                + $mnemonic-col-span-dorian
+                + $col-span-dorian
                 + 1 //spacer
-                + $mnemonic-col-span-phrygian
+                + $col-span-phrygian
                 + 1 //spacer
-                + $mnemonic-col-span-lydian
+                + $col-span-lydian
                 + 1 //spacer
                 )
-                / span $mnemonic-col-span-mixolydian;
+                / span $col-span-mixolydian;
 }
 
 @mixin mnemonic-spacer-after-mixolydian {
-  grid-column:  ($mnemonic-col-start-ionian
-                + $mnemonic-col-span-ionian)
+  grid-column:  ($col-start-ionian
+                + $col-span-ionian)
                 + 1 //spacer
-                + $mnemonic-col-span-dorian
+                + $col-span-dorian
                 + 1 //spacer
-                + $mnemonic-col-span-phrygian
+                + $col-span-phrygian
                 + 1 //spacer
-                + $mnemonic-col-span-lydian
+                + $col-span-lydian
                 + 1 //spacer
-                + $mnemonic-col-span-mixolydian;
+                + $col-span-mixolydian;
 }
 
 @mixin mnemonic-cols-aeolian {
-  grid-column:  ($mnemonic-col-start-ionian
-                + $mnemonic-col-span-ionian
+  grid-column:  ($col-start-ionian
+                + $col-span-ionian
                 + 1 //spacer
-                + $mnemonic-col-span-dorian
+                + $col-span-dorian
                 + 1 //spacer
-                + $mnemonic-col-span-phrygian
+                + $col-span-phrygian
                 + 1 //spacer
-                + $mnemonic-col-span-lydian
+                + $col-span-lydian
                 + 1 //spacer
-                + $mnemonic-col-span-mixolydian
+                + $col-span-mixolydian
                 + 1 //spacer
                 )
-                / span $mnemonic-col-span-aeolian;
+                / span $col-span-aeolian;
 }
 
 @mixin mnemonic-spacer-after-aeolian {
-  grid-column:  ($mnemonic-col-start-ionian
-                + $mnemonic-col-span-ionian)
+  grid-column:  ($col-start-ionian
+                + $col-span-ionian)
                 + 1 //spacer
-                + $mnemonic-col-span-dorian
+                + $col-span-dorian
                 + 1 //spacer
-                + $mnemonic-col-span-phrygian
+                + $col-span-phrygian
                 + 1 //spacer
-                + $mnemonic-col-span-lydian
+                + $col-span-lydian
                 + 1 //spacer
-                + $mnemonic-col-span-mixolydian
+                + $col-span-mixolydian
                 + 1 //spacer
-                + $mnemonic-col-span-aeolian;
+                + $col-span-aeolian;
 }
 
 @mixin mnemonic-cols-locrian {
-  grid-column:  ($mnemonic-col-start-ionian
-                + $mnemonic-col-span-ionian
+  grid-column:  ($col-start-ionian
+                + $col-span-ionian
                 + 1 //spacer
-                + $mnemonic-col-span-dorian
+                + $col-span-dorian
                 + 1 //spacer
-                + $mnemonic-col-span-phrygian
+                + $col-span-phrygian
                 + 1 //spacer
-                + $mnemonic-col-span-lydian
+                + $col-span-lydian
                 + 1 //spacer
-                + $mnemonic-col-span-mixolydian
+                + $col-span-mixolydian
                 + 1 //spacer
-                + $mnemonic-col-span-aeolian
+                + $col-span-aeolian
                 + 1 //spacer
                 )
-                / span $mnemonic-col-span-locrian;
+                / span $col-span-locrian;
 }
 
 @mixin shape-ionian($row-offset: 0, $col-offset: 0) {
