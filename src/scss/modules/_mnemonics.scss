@@ -9,8 +9,6 @@
 
   .spacer {
     grid-row: 1 / #{$row-count} + 1;
-    width: 0.4em;
-    background-color: gainsboro;
 
     &.after-ionian {
       @include mnemonic-spacer-after-ionian;

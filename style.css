@@ -67,8 +67,6 @@ body {
 }
 .mnemonic-grid .spacer {
   grid-row: 1/131;
-  width: 0.4em;
-  background-color: gainsboro;
 }
 .mnemonic-grid .spacer.after-ionian {
   grid-column: 6;
