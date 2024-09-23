@@ -1,3 +1,6 @@
 @use 'modules/base';
-@use 'modules/layout';
+@use 'modules/color';
+@use 'modules/mnemonics';
+@use 'modules/fretboard';
+@use 'modules/neighboring-modes';
 @use 'modules/typography';

@@ -1,0 +1,43 @@
+@use '../variables/color' as *;
+
+.ionian {
+  color: $ionian-text;
+  background-color: $ionian-bg;
+  border: 1px solid #{$ionian-text};
+}
+
+.dorian {
+  color: $dorian-text;
+  background-color: $dorian-bg;
+  border: 1px solid #{$dorian-text};
+}
+
+.phrygian {
+  color: $phrygian-text;
+  background-color: $phrygian-bg;
+  border: 1px solid #{$phrygian-text};
+}
+
+.lydian {
+  color: $lydian-text;
+  background-color: $lydian-bg;
+  border: 1px solid #{$lydian-text};
+}
+
+.mixolydian {
+  color: $mixolydian-text;
+  background-color: $mixolydian-bg;
+  border: 1px solid #{$mixolydian-text};
+}
+
+.aeolian {
+  color: $aeolian-text;
+  background-color: $aeolian-bg;
+  border: 1px solid #{$aeolian-text};
+}
+
+.locrian {
+  color: $locrian-text;
+  background-color: $locrian-bg;
+  border: 1px solid #{$locrian-text};
+}

@@ -1,72 +1,4 @@
-@use '../variables/color' as *;
 @use '../variables/mixins' as *;
-
-
-.fretboard {
-  display: grid;
-  grid-template-columns: repeat(16, minmax(0, 3em));
-  grid-template-rows: repeat(8, max-content);
-
-  margin-top: 6%;
-
-  .h.h {
-    transform-origin: top left;
-    transform: rotate(-40deg);
-    border: none;
-
-    &.ionian {
-      grid-area: 1 / 2;
-    }
-
-    &.dorian {
-      grid-area: 1 / 4;
-    }
-     
-    &.phrygian {
-      grid-area: 1 / 6;
-    }
-
-    &.lydian {
-      grid-area: 1 / 7;
-    }
-
-    &.mixolydian {
-      grid-area: 1 / 9;
-    }
-
-    &.aeolian {
-      grid-area: 1 / 11;
-    }
-
-    &.locrian {
-      grid-area: 1 / 13;
-    }
-  }
-
-  p {
-    height: 3em;
-    width: 3em;
-    display: grid;
-    padding: 2px;
-  }
-
-  // Default row values are based on a fretboard with 6 rows.
-  // Since we want an extra heading row, let's add an offset.
-  @include ionian(1, 0);
-  @include dorian(1, 0);
-  @include phrygian(1, 0);
-  @include lydian(1, 0);
-  @include mixolydian(1, 0);
-  @include aeolian(1, 0);
-  @include locrian(1, 0);
-
-  .fret {
-    grid-row: 8;
-    text-align: center;
-    padding: 10px;
-  }
-}
-
 
 .locrian-ionian-dorian {
   display: grid;
@@ -75,7 +7,7 @@
 
   margin-top: 6%;
 
-  .h.h {
+  .mode-name.mode-name {
     transform-origin: top left;
     transform: rotate(-40deg);
     border: none;
@@ -118,13 +50,13 @@
 
   // Default row values are based on a fretboard with 6 rows.
   // Since we want an extra heading row, let's add an offset.
-  @include ionian(1, 0);
-  @include dorian(1, 0);
-  @include phrygian(1, 0);
-  @include lydian(1, 0);
-  @include mixolydian(1, 0);
-  @include aeolian(1, 0);
-  @include locrian(1, 0);
+  @include shape-ionian(1, 0);
+  @include shape-dorian(1, 0);
+  @include shape-phrygian(1, 0);
+  @include shape-lydian(1, 0);
+  @include shape-mixolydian(1, 0);
+  @include shape-aeolian(1, 0);
+  @include shape-locrian(1, 0);
 
   .fret {
     grid-row: 8;
@@ -140,7 +72,7 @@
 
   margin-top: 6%;
 
-  .h.h {
+  .mode-name.mode-name {
     transform-origin: top left;
     transform: rotate(-40deg);
     border: none;
@@ -183,13 +115,13 @@
 
   // Default row values are based on a fretboard with 6 rows.
   // Since we want an extra heading row, let's add an offset.
-  @include ionian(1, 0);
-  @include dorian(1, 0);
-  @include phrygian(1, 0);
-  @include lydian(1, 0);
-  @include mixolydian(1, 0);
-  @include aeolian(1, 0);
-  @include locrian(1, 0);
+  @include shape-ionian(1, 0);
+  @include shape-dorian(1, 0);
+  @include shape-phrygian(1, 0);
+  @include shape-lydian(1, 0);
+  @include shape-mixolydian(1, 0);
+  @include shape-aeolian(1, 0);
+  @include shape-locrian(1, 0);
 
   .fret {
     grid-row: 8;
@@ -205,7 +137,7 @@
 
   margin-top: 6%;
 
-  .h.h {
+  .mode-name.mode-name {
     transform-origin: top left;
     transform: rotate(-40deg);
     border: none;
@@ -248,13 +180,13 @@
 
   // Default row values are based on a fretboard with 6 rows.
   // Since we want an extra heading row, let's add an offset.
-  @include ionian(1, 0);
-  @include dorian(1, 0);
-  @include phrygian(1, 0);
-  @include lydian(1, 0);
-  @include mixolydian(1, 0);
-  @include aeolian(1, 0);
-  @include locrian(1, 0);
+  @include shape-ionian(1, 0);
+  @include shape-dorian(1, 0);
+  @include shape-phrygian(1, 0);
+  @include shape-lydian(1, 0);
+  @include shape-mixolydian(1, 0);
+  @include shape-aeolian(1, 0);
+  @include shape-locrian(1, 0);
 
   .fret {
     grid-row: 8;
@@ -270,7 +202,7 @@
 
   margin-top: 6%;
 
-  .h.h {
+  .mode-name.mode-name {
     transform-origin: top left;
     transform: rotate(-40deg);
     border: none;
@@ -313,13 +245,13 @@
 
   // Default row values are based on a fretboard with 6 rows.
   // Since we want an extra heading row, let's add an offset.
-  @include ionian(1, 0);
-  @include dorian(1, 0);
-  @include phrygian(1, 0);
-  @include lydian(1, 0);
-  @include mixolydian(1, 0);
-  @include aeolian(1, 0);
-  @include locrian(1, 0);
+  @include shape-ionian(1, 0);
+  @include shape-dorian(1, 0);
+  @include shape-phrygian(1, 0);
+  @include shape-lydian(1, 0);
+  @include shape-mixolydian(1, 0);
+  @include shape-aeolian(1, 0);
+  @include shape-locrian(1, 0);
 
   .fret {
     grid-row: 8;
@@ -335,7 +267,7 @@
 
   margin-top: 6%;
 
-  .h.h {
+  .mode-name.mode-name {
     transform-origin: top left;
     transform: rotate(-40deg);
     border: none;
@@ -378,13 +310,13 @@
 
   // Default row values are based on a fretboard with 6 rows.
   // Since we want an extra heading row, let's add an offset.
-  @include ionian(1, 0);
-  @include dorian(1, 0);
-  @include phrygian(1, 0);
-  @include lydian(1, 0);
-  @include mixolydian(1, 0);
-  @include aeolian(1, 0);
-  @include locrian(1, 0);
+  @include shape-ionian(1, 0);
+  @include shape-dorian(1, 0);
+  @include shape-phrygian(1, 0);
+  @include shape-lydian(1, 0);
+  @include shape-mixolydian(1, 0);
+  @include shape-aeolian(1, 0);
+  @include shape-locrian(1, 0);
 
   .fret {
     grid-row: 8;
@@ -400,7 +332,7 @@
 
   margin-top: 6%;
 
-  .h.h {
+  .mode-name.mode-name {
     transform-origin: top left;
     transform: rotate(-40deg);
     border: none;
@@ -443,13 +375,13 @@
 
   // Default row values are based on a fretboard with 6 rows.
   // Since we want an extra heading row, let's add an offset.
-  @include ionian(1, 0);
-  @include dorian(1, 0);
-  @include phrygian(1, 0);
-  @include lydian(1, 0);
-  @include mixolydian(1, 0);
-  @include aeolian(1, 0);
-  @include locrian(1, 0);
+  @include shape-ionian(1, 0);
+  @include shape-dorian(1, 0);
+  @include shape-phrygian(1, 0);
+  @include shape-lydian(1, 0);
+  @include shape-mixolydian(1, 0);
+  @include shape-aeolian(1, 0);
+  @include shape-locrian(1, 0);
 
   .fret {
     grid-row: 8;

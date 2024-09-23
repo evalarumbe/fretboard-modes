@@ -1,178 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
   <title>Fretboard Modes</title>
 </head>
+
 <body>
   <h1>Relative Modes in G</h1>
   <p>Key signature stays the same. Root note moves.</p>
   <main>
-    <section class="fretboard">
-      <h2>All modes</h2>
-      <!-- .a1 represents scale degree 1 in octave a -->
-      <!-- Ionian -->
-      <h3 class="h ionian">Ionian</h3>
-      <p class="oct-a deg-1 ionian">1</p>
-      <p class="oct-a deg-2 ionian">2</p>
-      <p class="oct-a deg-3 ionian">3</p>
-      <p class="oct-a deg-4 ionian">4</p>
-      <p class="oct-a deg-5 ionian">5</p>
-      <p class="oct-a deg-6 ionian">6</p>
-      <p class="oct-a deg-7 ionian">7</p>
-      <p class="oct-b deg-1 ionian">1</p>
-      <p class="oct-b deg-2 ionian">2</p>
-      <p class="oct-b deg-3 ionian">3</p>
-      <p class="oct-b deg-4 ionian">4</p>
-      <p class="oct-b deg-5 ionian">5</p>
-      <p class="oct-b deg-6 ionian">6</p>
-      <p class="oct-b deg-7 ionian">7</p>
-      <p class="oct-c deg-1 ionian">1</p>
-      <!-- Dorian -->
-      <h3 class="h dorian">Dorian</h3>
-      <p class="oct-a deg-1 dorian">1</p>
-      <p class="oct-a deg-2 dorian">2</p>
-      <p class="oct-a deg-3 dorian">3</p>
-      <p class="oct-a deg-4 dorian">4</p>
-      <p class="oct-a deg-5 dorian">5</p>
-      <p class="oct-a deg-6 dorian">6</p>
-      <p class="oct-a deg-7 dorian">7</p>
-      <p class="oct-b deg-1 dorian">1</p>
-      <p class="oct-b deg-2 dorian">2</p>
-      <p class="oct-b deg-3 dorian">3</p>
-      <p class="oct-b deg-4 dorian">4</p>
-      <p class="oct-b deg-5 dorian">5</p>
-      <p class="oct-b deg-6 dorian">6</p>
-      <p class="oct-b deg-7 dorian">7</p>
-      <p class="oct-c deg-1 dorian">1</p>
-      <!-- Phrygian -->
-      <h3 class="h phrygian">Phrygian</h3>
-      <p class="oct-a deg-1 phrygian">1</p>
-      <p class="oct-a deg-2 phrygian">2</p>
-      <p class="oct-a deg-3 phrygian">3</p>
-      <p class="oct-a deg-4 phrygian">4</p>
-      <p class="oct-a deg-5 phrygian">5</p>
-      <p class="oct-a deg-6 phrygian">6</p>
-      <p class="oct-a deg-7 phrygian">7</p>
-      <p class="oct-b deg-1 phrygian">1</p>
-      <p class="oct-b deg-2 phrygian">2</p>
-      <p class="oct-b deg-3 phrygian">3</p>
-      <p class="oct-b deg-4 phrygian">4</p>
-      <p class="oct-b deg-5 phrygian">5</p>
-      <p class="oct-b deg-6 phrygian">6</p>
-      <p class="oct-b deg-7 phrygian">7</p>
-      <p class="oct-c deg-1 phrygian">1</p>
-      <!-- Lydian -->
-      <h3 class="h lydian">Lydian</h3>
-      <p class="oct-a deg-1 lydian">1</p>
-      <p class="oct-a deg-2 lydian">2</p>
-      <p class="oct-a deg-3 lydian">3</p>
-      <p class="oct-a deg-4 lydian">4</p>
-      <p class="oct-a deg-5 lydian">5</p>
-      <p class="oct-a deg-6 lydian">6</p>
-      <p class="oct-a deg-7 lydian">7</p>
-      <p class="oct-b deg-1 lydian">1</p>
-      <p class="oct-b deg-2 lydian">2</p>
-      <p class="oct-b deg-3 lydian">3</p>
-      <p class="oct-b deg-4 lydian">4</p>
-      <p class="oct-b deg-5 lydian">5</p>
-      <p class="oct-b deg-6 lydian">6</p>
-      <p class="oct-b deg-7 lydian">7</p>
-      <p class="oct-c deg-1 lydian">1</p>
-      <!-- Mixolydian -->
-      <h3 class="h mixolydian">Mixolydian</h3>
-      <p class="oct-a deg-1 mixolydian">1</p>
-      <p class="oct-a deg-2 mixolydian">2</p>
-      <p class="oct-a deg-3 mixolydian">3</p>
-      <p class="oct-a deg-4 mixolydian">4</p>
-      <p class="oct-a deg-5 mixolydian">5</p>
-      <p class="oct-a deg-6 mixolydian">6</p>
-      <p class="oct-a deg-7 mixolydian">7</p>
-      <p class="oct-b deg-1 mixolydian">1</p>
-      <p class="oct-b deg-2 mixolydian">2</p>
-      <p class="oct-b deg-3 mixolydian">3</p>
-      <p class="oct-b deg-4 mixolydian">4</p>
-      <p class="oct-b deg-5 mixolydian">5</p>
-      <p class="oct-b deg-6 mixolydian">6</p>
-      <p class="oct-b deg-7 mixolydian">7</p>
-      <p class="oct-c deg-1 mixolydian">1</p>
-      <!-- Aeolian -->
-      <h3 class="h aeolian">Aeolian</h3>
-      <p class="oct-a deg-1 aeolian">1</p>
-      <p class="oct-a deg-2 aeolian">2</p>
-      <p class="oct-a deg-3 aeolian">3</p>
-      <p class="oct-a deg-4 aeolian">4</p>
-      <p class="oct-a deg-5 aeolian">5</p>
-      <p class="oct-a deg-6 aeolian">6</p>
-      <p class="oct-a deg-7 aeolian">7</p>
-      <p class="oct-b deg-1 aeolian">1</p>
-      <p class="oct-b deg-2 aeolian">2</p>
-      <p class="oct-b deg-3 aeolian">3</p>
-      <p class="oct-b deg-4 aeolian">4</p>
-      <p class="oct-b deg-5 aeolian">5</p>
-      <p class="oct-b deg-6 aeolian">6</p>
-      <p class="oct-b deg-7 aeolian">7</p>
-      <p class="oct-c deg-1 aeolian">1</p>
-      <!-- Locrian -->
-      <h3 class="h locrian">Locrian</h3>
-      <p class="oct-a deg-1 locrian">1</p>
-      <p class="oct-a deg-2 locrian">2</p>
-      <p class="oct-a deg-3 locrian">3</p>
-      <p class="oct-a deg-4 locrian">4</p>
-      <p class="oct-a deg-5 locrian">5</p>
-      <p class="oct-a deg-6 locrian">6</p>
-      <p class="oct-a deg-7 locrian">7</p>
-      <p class="oct-b deg-1 locrian">1</p>
-      <p class="oct-b deg-2 locrian">2</p>
-      <p class="oct-b deg-3 locrian">3</p>
-      <p class="oct-b deg-4 locrian">4</p>
-      <p class="oct-b deg-5 locrian">5</p>
-      <p class="oct-b deg-6 locrian">6</p>
-      <p class="oct-b deg-7 locrian">7</p>
-      <p class="oct-c deg-1 locrian">1</p>
-      <!-- Fret numbers -->
-      <p class="fret">2</p>
-      <p class="fret">3</p>
-      <p class="fret">4</p>
-      <p class="fret">5</p>
-      <p class="fret">6</p>
-      <p class="fret">7</p>
-      <p class="fret">8</p>
-      <p class="fret">9</p>
-      <p class="fret">10</p>
-      <p class="fret">11</p>
-      <p class="fret">12</p>
-      <p class="fret">13</p>
-      <p class="fret">14</p>
-      <p class="fret">15</p>
-      <p class="fret">16</p>
-      <p class="fret">17</p>
-      </section>
-    </section>
-    <section>
-      <h2>Overlaps per mode</h2>
-      <section class="locrian-ionian-dorian">
-        <!-- Locrian -->
-        <h3 class="h locrian">Locrian</h3>
-        <p class="oct-a deg-1 locrian">1</p>
-        <p class="oct-a deg-2 locrian">2</p>
-        <p class="oct-a deg-3 locrian">3</p>
-        <p class="oct-a deg-4 locrian">4</p>
-        <p class="oct-a deg-5 locrian">5</p>
-        <p class="oct-a deg-6 locrian">6</p>
-        <p class="oct-a deg-7 locrian">7</p>
-        <p class="oct-b deg-1 locrian">1</p>
-        <p class="oct-b deg-2 locrian">2</p>
-        <p class="oct-b deg-3 locrian">3</p>
-        <p class="oct-b deg-4 locrian">4</p>
-        <p class="oct-b deg-5 locrian">5</p>
-        <p class="oct-b deg-6 locrian">6</p>
-        <p class="oct-b deg-7 locrian">7</p>
-        <p class="oct-c deg-1 locrian">1</p>
+    <section class="mnemonics">
+      <h2>Mnemonics</h2>
+      <div class="mnemonic-grid">
+        <!-- Strings -->
+        <p class="string-name first">E)</p>
+        <p class="string-name second">B)</p>
+        <p class="string-name third">G)</p>
+        <p class="string-name fourth">D)</p>
+        <p class="string-name fifth">A)</p>
+        <p class="string-name sixth">E)</p>
         <!-- Ionian -->
-        <h3 class="h ionian">Ionian</h3>
+        <h3 class="mode-name ionian">Ionian</h3>
+        <p class="mnemonic ionian center">2</p>
+        <!-- <p class="oct-a deg-1 ionian">1</p>
+        <p class="oct-a deg-2 ionian">2</p> -->
+        <div class="spacer after-ionian"></div>
+        <!-- Dorian -->
+        <h3 class="mode-name dorian">Dorian</h3>
+        <!-- <p class="oct-a deg-1 dorian">1</p>
+        <p class="oct-a deg-2 dorian">2</p>
+        <p class="oct-a deg-3 dorian">3</p> -->
+        <div class="spacer after-dorian"></div>
+        <!-- Phrygian -->
+        <h3 class="mode-name phrygian">Phrygian</h3>
+        <div class="spacer after-phrygian"></div>
+        <!-- Lydian -->
+        <h3 class="mode-name lydian">Lydian</h3>
+        <div class="spacer after-lydian"></div>
+        <!-- Mixolydian -->
+        <h3 class="mode-name mixolydian">Mixolydian</h3>
+        <div class="spacer after-mixolydian"></div>
+        <!-- Aeolian -->
+        <h3 class="mode-name aeolian">Aeolian</h3>
+        <div class="spacer after-aeolian"></div>
+        <!-- Locrian -->
+        <h3 class="mode-name locrian">Locrian</h3>
+
+      </div>
+    </section>
+    <section class="fretboard">
+      <h2>Fretboard</h2>
+      <div class="fretboard-grid">
+        <!-- .a1 represents scale degree 1 in octave a -->
+        <!-- Ionian -->
+        <h3 class="mode-name ionian">Ionian</h3>
         <p class="oct-a deg-1 ionian">1</p>
         <p class="oct-a deg-2 ionian">2</p>
         <p class="oct-a deg-3 ionian">3</p>
@@ -189,7 +73,165 @@
         <p class="oct-b deg-7 ionian">7</p>
         <p class="oct-c deg-1 ionian">1</p>
         <!-- Dorian -->
-        <h3 class="h dorian">Dorian</h3>
+        <h3 class="mode-name dorian">Dorian</h3>
+        <p class="oct-a deg-1 dorian">1</p>
+        <p class="oct-a deg-2 dorian">2</p>
+        <p class="oct-a deg-3 dorian">3</p>
+        <p class="oct-a deg-4 dorian">4</p>
+        <p class="oct-a deg-5 dorian">5</p>
+        <p class="oct-a deg-6 dorian">6</p>
+        <p class="oct-a deg-7 dorian">7</p>
+        <p class="oct-b deg-1 dorian">1</p>
+        <p class="oct-b deg-2 dorian">2</p>
+        <p class="oct-b deg-3 dorian">3</p>
+        <p class="oct-b deg-4 dorian">4</p>
+        <p class="oct-b deg-5 dorian">5</p>
+        <p class="oct-b deg-6 dorian">6</p>
+        <p class="oct-b deg-7 dorian">7</p>
+        <p class="oct-c deg-1 dorian">1</p>
+        <!-- Phrygian -->
+        <h3 class="mode-name phrygian">Phrygian</h3>
+        <p class="oct-a deg-1 phrygian">1</p>
+        <p class="oct-a deg-2 phrygian">2</p>
+        <p class="oct-a deg-3 phrygian">3</p>
+        <p class="oct-a deg-4 phrygian">4</p>
+        <p class="oct-a deg-5 phrygian">5</p>
+        <p class="oct-a deg-6 phrygian">6</p>
+        <p class="oct-a deg-7 phrygian">7</p>
+        <p class="oct-b deg-1 phrygian">1</p>
+        <p class="oct-b deg-2 phrygian">2</p>
+        <p class="oct-b deg-3 phrygian">3</p>
+        <p class="oct-b deg-4 phrygian">4</p>
+        <p class="oct-b deg-5 phrygian">5</p>
+        <p class="oct-b deg-6 phrygian">6</p>
+        <p class="oct-b deg-7 phrygian">7</p>
+        <p class="oct-c deg-1 phrygian">1</p>
+        <!-- Lydian -->
+        <h3 class="mode-name lydian">Lydian</h3>
+        <p class="oct-a deg-1 lydian">1</p>
+        <p class="oct-a deg-2 lydian">2</p>
+        <p class="oct-a deg-3 lydian">3</p>
+        <p class="oct-a deg-4 lydian">4</p>
+        <p class="oct-a deg-5 lydian">5</p>
+        <p class="oct-a deg-6 lydian">6</p>
+        <p class="oct-a deg-7 lydian">7</p>
+        <p class="oct-b deg-1 lydian">1</p>
+        <p class="oct-b deg-2 lydian">2</p>
+        <p class="oct-b deg-3 lydian">3</p>
+        <p class="oct-b deg-4 lydian">4</p>
+        <p class="oct-b deg-5 lydian">5</p>
+        <p class="oct-b deg-6 lydian">6</p>
+        <p class="oct-b deg-7 lydian">7</p>
+        <p class="oct-c deg-1 lydian">1</p>
+        <!-- Mixolydian -->
+        <h3 class="mode-name mixolydian">Mixolydian</h3>
+        <p class="oct-a deg-1 mixolydian">1</p>
+        <p class="oct-a deg-2 mixolydian">2</p>
+        <p class="oct-a deg-3 mixolydian">3</p>
+        <p class="oct-a deg-4 mixolydian">4</p>
+        <p class="oct-a deg-5 mixolydian">5</p>
+        <p class="oct-a deg-6 mixolydian">6</p>
+        <p class="oct-a deg-7 mixolydian">7</p>
+        <p class="oct-b deg-1 mixolydian">1</p>
+        <p class="oct-b deg-2 mixolydian">2</p>
+        <p class="oct-b deg-3 mixolydian">3</p>
+        <p class="oct-b deg-4 mixolydian">4</p>
+        <p class="oct-b deg-5 mixolydian">5</p>
+        <p class="oct-b deg-6 mixolydian">6</p>
+        <p class="oct-b deg-7 mixolydian">7</p>
+        <p class="oct-c deg-1 mixolydian">1</p>
+        <!-- Aeolian -->
+        <h3 class="mode-name aeolian">Aeolian</h3>
+        <p class="oct-a deg-1 aeolian">1</p>
+        <p class="oct-a deg-2 aeolian">2</p>
+        <p class="oct-a deg-3 aeolian">3</p>
+        <p class="oct-a deg-4 aeolian">4</p>
+        <p class="oct-a deg-5 aeolian">5</p>
+        <p class="oct-a deg-6 aeolian">6</p>
+        <p class="oct-a deg-7 aeolian">7</p>
+        <p class="oct-b deg-1 aeolian">1</p>
+        <p class="oct-b deg-2 aeolian">2</p>
+        <p class="oct-b deg-3 aeolian">3</p>
+        <p class="oct-b deg-4 aeolian">4</p>
+        <p class="oct-b deg-5 aeolian">5</p>
+        <p class="oct-b deg-6 aeolian">6</p>
+        <p class="oct-b deg-7 aeolian">7</p>
+        <p class="oct-c deg-1 aeolian">1</p>
+        <!-- Locrian -->
+        <h3 class="mode-name locrian">Locrian</h3>
+        <p class="oct-a deg-1 locrian">1</p>
+        <p class="oct-a deg-2 locrian">2</p>
+        <p class="oct-a deg-3 locrian">3</p>
+        <p class="oct-a deg-4 locrian">4</p>
+        <p class="oct-a deg-5 locrian">5</p>
+        <p class="oct-a deg-6 locrian">6</p>
+        <p class="oct-a deg-7 locrian">7</p>
+        <p class="oct-b deg-1 locrian">1</p>
+        <p class="oct-b deg-2 locrian">2</p>
+        <p class="oct-b deg-3 locrian">3</p>
+        <p class="oct-b deg-4 locrian">4</p>
+        <p class="oct-b deg-5 locrian">5</p>
+        <p class="oct-b deg-6 locrian">6</p>
+        <p class="oct-b deg-7 locrian">7</p>
+        <p class="oct-c deg-1 locrian">1</p>
+        <!-- Fret numbers -->
+        <p class="fret">2</p>
+        <p class="fret">3</p>
+        <p class="fret">4</p>
+        <p class="fret">5</p>
+        <p class="fret">6</p>
+        <p class="fret">7</p>
+        <p class="fret">8</p>
+        <p class="fret">9</p>
+        <p class="fret">10</p>
+        <p class="fret">11</p>
+        <p class="fret">12</p>
+        <p class="fret">13</p>
+        <p class="fret">14</p>
+        <p class="fret">15</p>
+        <p class="fret">16</p>
+        <p class="fret">17</p>
+      </div>
+    </section>
+    <section class="neighboring-modes">
+      <h2>Neighboring modes</h2>
+      <section class="locrian-ionian-dorian">
+        <!-- Locrian -->
+        <h3 class="mode-name locrian">Locrian</h3>
+        <p class="oct-a deg-1 locrian">1</p>
+        <p class="oct-a deg-2 locrian">2</p>
+        <p class="oct-a deg-3 locrian">3</p>
+        <p class="oct-a deg-4 locrian">4</p>
+        <p class="oct-a deg-5 locrian">5</p>
+        <p class="oct-a deg-6 locrian">6</p>
+        <p class="oct-a deg-7 locrian">7</p>
+        <p class="oct-b deg-1 locrian">1</p>
+        <p class="oct-b deg-2 locrian">2</p>
+        <p class="oct-b deg-3 locrian">3</p>
+        <p class="oct-b deg-4 locrian">4</p>
+        <p class="oct-b deg-5 locrian">5</p>
+        <p class="oct-b deg-6 locrian">6</p>
+        <p class="oct-b deg-7 locrian">7</p>
+        <p class="oct-c deg-1 locrian">1</p>
+        <!-- Ionian -->
+        <h3 class="mode-name ionian">Ionian</h3>
+        <p class="oct-a deg-1 ionian">1</p>
+        <p class="oct-a deg-2 ionian">2</p>
+        <p class="oct-a deg-3 ionian">3</p>
+        <p class="oct-a deg-4 ionian">4</p>
+        <p class="oct-a deg-5 ionian">5</p>
+        <p class="oct-a deg-6 ionian">6</p>
+        <p class="oct-a deg-7 ionian">7</p>
+        <p class="oct-b deg-1 ionian">1</p>
+        <p class="oct-b deg-2 ionian">2</p>
+        <p class="oct-b deg-3 ionian">3</p>
+        <p class="oct-b deg-4 ionian">4</p>
+        <p class="oct-b deg-5 ionian">5</p>
+        <p class="oct-b deg-6 ionian">6</p>
+        <p class="oct-b deg-7 ionian">7</p>
+        <p class="oct-c deg-1 ionian">1</p>
+        <!-- Dorian -->
+        <h3 class="mode-name dorian">Dorian</h3>
         <p class="oct-a deg-1 dorian">1</p>
         <p class="oct-a deg-2 dorian">2</p>
         <p class="oct-a deg-3 dorian">3</p>
@@ -225,7 +267,7 @@
       </section>
       <section class="ionian-dorian-phrygian">
         <!-- Ionian -->
-        <h3 class="h ionian">Ionian</h3>
+        <h3 class="mode-name ionian">Ionian</h3>
         <p class="oct-a deg-1 ionian">1</p>
         <p class="oct-a deg-2 ionian">2</p>
         <p class="oct-a deg-3 ionian">3</p>
@@ -242,7 +284,7 @@
         <p class="oct-b deg-7 ionian">7</p>
         <p class="oct-c deg-1 ionian">1</p>
         <!-- Dorian -->
-        <h3 class="h dorian">Dorian</h3>
+        <h3 class="mode-name dorian">Dorian</h3>
         <p class="oct-a deg-1 dorian">1</p>
         <p class="oct-a deg-2 dorian">2</p>
         <p class="oct-a deg-3 dorian">3</p>
@@ -259,7 +301,7 @@
         <p class="oct-b deg-7 dorian">7</p>
         <p class="oct-c deg-1 dorian">1</p>
         <!-- Phrygian -->
-        <h3 class="h phrygian">Phrygian</h3>
+        <h3 class="mode-name phrygian">Phrygian</h3>
         <p class="oct-a deg-1 phrygian">1</p>
         <p class="oct-a deg-2 phrygian">2</p>
         <p class="oct-a deg-3 phrygian">3</p>
@@ -295,7 +337,7 @@
       </section>
       <section class="dorian-phrygian-lydian">
         <!-- Dorian -->
-        <h3 class="h dorian">Dorian</h3>
+        <h3 class="mode-name dorian">Dorian</h3>
         <p class="oct-a deg-1 dorian">1</p>
         <p class="oct-a deg-2 dorian">2</p>
         <p class="oct-a deg-3 dorian">3</p>
@@ -312,7 +354,7 @@
         <p class="oct-b deg-7 dorian">7</p>
         <p class="oct-c deg-1 dorian">1</p>
         <!-- Phrygian -->
-        <h3 class="h phrygian">Phrygian</h3>
+        <h3 class="mode-name phrygian">Phrygian</h3>
         <p class="oct-a deg-1 phrygian">1</p>
         <p class="oct-a deg-2 phrygian">2</p>
         <p class="oct-a deg-3 phrygian">3</p>
@@ -329,7 +371,7 @@
         <p class="oct-b deg-7 phrygian">7</p>
         <p class="oct-c deg-1 phrygian">1</p>
         <!-- Lydian -->
-        <h3 class="h lydian">Lydian</h3>
+        <h3 class="mode-name lydian">Lydian</h3>
         <p class="oct-a deg-1 lydian">1</p>
         <p class="oct-a deg-2 lydian">2</p>
         <p class="oct-a deg-3 lydian">3</p>
@@ -365,7 +407,7 @@
       </section>
       <section class="phrygian-lydian-mixolydian">
         <!-- Phrygian -->
-        <h3 class="h phrygian">Phrygian</h3>
+        <h3 class="mode-name phrygian">Phrygian</h3>
         <p class="oct-a deg-1 phrygian">1</p>
         <p class="oct-a deg-2 phrygian">2</p>
         <p class="oct-a deg-3 phrygian">3</p>
@@ -382,7 +424,7 @@
         <p class="oct-b deg-7 phrygian">7</p>
         <p class="oct-c deg-1 phrygian">1</p>
         <!-- Lydian -->
-        <h3 class="h lydian">Lydian</h3>
+        <h3 class="mode-name lydian">Lydian</h3>
         <p class="oct-a deg-1 lydian">1</p>
         <p class="oct-a deg-2 lydian">2</p>
         <p class="oct-a deg-3 lydian">3</p>
@@ -399,7 +441,7 @@
         <p class="oct-b deg-7 lydian">7</p>
         <p class="oct-c deg-1 lydian">1</p>
         <!-- Mixolydian -->
-        <h3 class="h mixolydian">Mixolydian</h3>
+        <h3 class="mode-name mixolydian">Mixolydian</h3>
         <p class="oct-a deg-1 mixolydian">1</p>
         <p class="oct-a deg-2 mixolydian">2</p>
         <p class="oct-a deg-3 mixolydian">3</p>
@@ -435,7 +477,7 @@
       </section>
       <section class="lydian-mixolydian-aeolian">
         <!-- Lydian -->
-        <h3 class="h lydian">Lydian</h3>
+        <h3 class="mode-name lydian">Lydian</h3>
         <p class="oct-a deg-1 lydian">1</p>
         <p class="oct-a deg-2 lydian">2</p>
         <p class="oct-a deg-3 lydian">3</p>
@@ -452,7 +494,7 @@
         <p class="oct-b deg-7 lydian">7</p>
         <p class="oct-c deg-1 lydian">1</p>
         <!-- Mixolydian -->
-        <h3 class="h mixolydian">Mixolydian</h3>
+        <h3 class="mode-name mixolydian">Mixolydian</h3>
         <p class="oct-a deg-1 mixolydian">1</p>
         <p class="oct-a deg-2 mixolydian">2</p>
         <p class="oct-a deg-3 mixolydian">3</p>
@@ -469,7 +511,7 @@
         <p class="oct-b deg-7 mixolydian">7</p>
         <p class="oct-c deg-1 mixolydian">1</p>
         <!-- Aeolian -->
-        <h3 class="h aeolian">Aeolian</h3>
+        <h3 class="mode-name aeolian">Aeolian</h3>
         <p class="oct-a deg-1 aeolian">1</p>
         <p class="oct-a deg-2 aeolian">2</p>
         <p class="oct-a deg-3 aeolian">3</p>
@@ -505,7 +547,7 @@
       </section>
       <section class="mixolydian-aeolian-locrian">
         <!-- Mixolydian -->
-        <h3 class="h mixolydian">Mixolydian</h3>
+        <h3 class="mode-name mixolydian">Mixolydian</h3>
         <p class="oct-a deg-1 mixolydian">1</p>
         <p class="oct-a deg-2 mixolydian">2</p>
         <p class="oct-a deg-3 mixolydian">3</p>
@@ -522,7 +564,7 @@
         <p class="oct-b deg-7 mixolydian">7</p>
         <p class="oct-c deg-1 mixolydian">1</p>
         <!-- Aeolian -->
-        <h3 class="h aeolian">Aeolian</h3>
+        <h3 class="mode-name aeolian">Aeolian</h3>
         <p class="oct-a deg-1 aeolian">1</p>
         <p class="oct-a deg-2 aeolian">2</p>
         <p class="oct-a deg-3 aeolian">3</p>
@@ -539,7 +581,7 @@
         <p class="oct-b deg-7 aeolian">7</p>
         <p class="oct-c deg-1 aeolian">1</p>
         <!-- Locrian -->
-        <h3 class="h locrian">Locrian</h3>
+        <h3 class="mode-name locrian">Locrian</h3>
         <p class="oct-a deg-1 locrian">1</p>
         <p class="oct-a deg-2 locrian">2</p>
         <p class="oct-a deg-3 locrian">3</p>
@@ -556,7 +598,7 @@
         <p class="oct-b deg-7 locrian">7</p>
         <p class="oct-c deg-1 locrian">1</p>
         <!-- Locrian -->
-        <h3 class="h locrian">Locrian</h3>
+        <h3 class="mode-name locrian">Locrian</h3>
         <p class="oct-a deg-1 locrian">1</p>
         <p class="oct-a deg-2 locrian">2</p>
         <p class="oct-a deg-3 locrian">3</p>
@@ -590,7 +632,7 @@
         <p class="fret">16</p>
         <p class="fret">17</p>
       </section>
-    <section>
+    </section>
   </main>
 </body>
 </html>

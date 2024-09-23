@@ -1,0 +1,134 @@
+@use '../variables/color' as *;
+@use '../variables/mixins' as *;
+
+.mnemonic-grid {
+  $rows-per-string: 2;
+
+  $row-count: 1 // Mode name
+              + $rows-per-string * 6; // 2 per string
+  
+
+  display: grid;
+  grid-template-rows: repeat($row-count, auto);
+  grid-template-columns: repeat($column-count, auto);
+
+  .spacer {
+    grid-row: 1 / #{$row-count} + 1;
+    width: 0.4em;
+    background-color: gainsboro;
+
+    &.after-ionian {
+      @include mnemonic-spacer-after-ionian;
+    }
+
+    &.after-dorian {
+      @include mnemonic-spacer-after-dorian;
+    }
+
+    &.after-phrygian {
+      @include mnemonic-spacer-after-phrygian;
+    }
+
+    &.after-lydian {
+      @include mnemonic-spacer-after-lydian;
+    }
+
+    &.after-mixolydian {
+      @include mnemonic-spacer-after-mixolydian;
+    }
+
+    &.after-aeolian {
+      @include mnemonic-spacer-after-aeolian;
+    }
+  }
+
+  .string-name {
+    grid-column: 1;
+
+    &.first {
+      $row-start: 2;
+      grid-row: $row-start / span $rows-per-string;
+    }
+
+    &.second {
+      $row-start: 1 + (2 * $rows-per-string);
+      grid-row: $row-start / span $rows-per-string;
+    }
+
+    &.third {
+      $row-start: 1 + (3 * $rows-per-string);
+      grid-row: $row-start / span $rows-per-string;
+    }
+
+    &.fourth {
+      $row-start: 1 + (4 * $rows-per-string);
+      grid-row: $row-start / span $rows-per-string;
+    }
+
+    &.fifth {
+      $row-start: 1 + (5 * $rows-per-string);
+      grid-row: $row-start / span $rows-per-string;
+    }
+
+    &.sixth {
+      $row-start: 1 + (6 * $rows-per-string);
+      grid-row: $row-start / span $rows-per-string;
+    }
+  }
+
+  .mode-name {
+    text-align: center;
+    grid-row: 1;
+  }
+
+  .mnemonic.mnemonic {
+    grid-row: 2;
+
+    &.left {
+      text-align: left;
+    }
+
+    &.center {
+      text-align: center;
+    }
+
+    &.right {
+      text-align: right;
+    }
+  }
+
+  .mode-name.mode-name,
+  .mnemonic.mnemonic {
+    border: none;
+    background: none;
+
+    &.ionian {
+      @include mnemonic-cols-ionian;
+    }
+
+    &.dorian {
+      @include mnemonic-cols-dorian;
+    }
+
+    &.phrygian {
+      @include mnemonic-cols-phrygian;
+    }
+
+    &.lydian {
+      @include mnemonic-cols-lydian;
+    }
+  
+    &.mixolydian {
+      @include mnemonic-cols-mixolydian;
+    }
+  
+    &.aeolian {
+      @include mnemonic-cols-aeolian;
+    }
+  
+    &.locrian {
+      @include mnemonic-cols-locrian;
+    }
+  }
+}
+

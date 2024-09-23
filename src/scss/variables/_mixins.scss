@@ -1,11 +1,176 @@
 @use '../variables/color' as *;
 
-@mixin ionian($row-offset: 0, $col-offset: 0) {
+// TODO: when it's working, rename global vars to "mnemonic-..."
+
+$col-start-ionian: 2;
+
+$column-count:  1   // String name
+              + 4   // Frets in Ionian
+              + 1   // spacer
+              + 5   // Frets in Dorian
+              + 1   // spacer
+              + 4   // Frets in Phrygian
+              + 1   // spacer
+              + 4   // Frets in Lydian
+              + 1   // spacer
+              + 5   // Frets in Mixolydian
+              + 1   // spacer
+              + 5   // Frets in Aeolian
+              + 1   // spacer
+              + 4;  // Frets in Locrian
+
+  $col-span-ionian: 4;
+  $col-span-dorian: 5;
+  $col-span-phrygian: 4;
+  $col-span-lydian: 4;
+  $col-span-mixolydian: 5;
+  $col-span-aeolian: 5;
+  $col-span-locrian: 4;
+
+@mixin mnemonic-cols-ionian {
+  grid-column: $col-start-ionian / span $col-span-ionian;
+}
+
+@mixin mnemonic-spacer-after-ionian {
+  grid-column:  ($col-start-ionian
+                + $col-span-ionian);
+}
+
+@mixin mnemonic-cols-dorian {
+  grid-column:  ($col-start-ionian
+                + $col-span-ionian
+                + 1 //spacer
+                )
+                / span $col-span-dorian;
+}
+
+@mixin mnemonic-spacer-after-dorian {
+  grid-column:  ($col-start-ionian
+                + $col-span-ionian)
+                + 1 //spacer
+                + $col-span-dorian;
+}
+
+@mixin mnemonic-cols-phrygian {
+  grid-column:  ($col-start-ionian
+                + $col-span-ionian
+                + 1 //spacer
+                + $col-span-dorian
+                + 1 //spacer
+                )
+                / span $col-span-phrygian;
+}
+
+@mixin mnemonic-spacer-after-phrygian {
+  grid-column:  ($col-start-ionian
+                + $col-span-ionian)
+                + 1 //spacer
+                + $col-span-dorian
+                + 1 //spacer
+                + $col-span-phrygian;
+}
+
+@mixin mnemonic-cols-lydian {
+  grid-column:  ($col-start-ionian
+                + $col-span-ionian
+                + 1 //spacer
+                + $col-span-dorian
+                + 1 //spacer
+                + $col-span-phrygian
+                + 1 //spacer
+                )
+                / span $col-span-lydian;
+}
+
+@mixin mnemonic-spacer-after-lydian {
+  grid-column:  ($col-start-ionian
+                + $col-span-ionian)
+                + 1 //spacer
+                + $col-span-dorian
+                + 1 //spacer
+                + $col-span-phrygian
+                + 1 //spacer
+                + $col-span-lydian;
+}
+
+@mixin mnemonic-cols-mixolydian {
+  grid-column:  ($col-start-ionian
+                + $col-span-ionian
+                + 1 //spacer
+                + $col-span-dorian
+                + 1 //spacer
+                + $col-span-phrygian
+                + 1 //spacer
+                + $col-span-lydian
+                + 1 //spacer
+                )
+                / span $col-span-mixolydian;
+}
+
+@mixin mnemonic-spacer-after-mixolydian {
+  grid-column:  ($col-start-ionian
+                + $col-span-ionian)
+                + 1 //spacer
+                + $col-span-dorian
+                + 1 //spacer
+                + $col-span-phrygian
+                + 1 //spacer
+                + $col-span-lydian
+                + 1 //spacer
+                + $col-span-mixolydian;
+}
+
+@mixin mnemonic-cols-aeolian {
+  grid-column:  ($col-start-ionian
+                + $col-span-ionian
+                + 1 //spacer
+                + $col-span-dorian
+                + 1 //spacer
+                + $col-span-phrygian
+                + 1 //spacer
+                + $col-span-lydian
+                + 1 //spacer
+                + $col-span-mixolydian
+                + 1 //spacer
+                )
+                / span $col-span-aeolian;
+}
+
+@mixin mnemonic-spacer-after-aeolian {
+  grid-column:  ($col-start-ionian
+                + $col-span-ionian)
+                + 1 //spacer
+                + $col-span-dorian
+                + 1 //spacer
+                + $col-span-phrygian
+                + 1 //spacer
+                + $col-span-lydian
+                + 1 //spacer
+                + $col-span-mixolydian
+                + 1 //spacer
+                + $col-span-aeolian;
+}
+
+@mixin mnemonic-cols-locrian {
+  grid-column:  ($col-start-ionian
+                + $col-span-ionian
+                + 1 //spacer
+                + $col-span-dorian
+                + 1 //spacer
+                + $col-span-phrygian
+                + 1 //spacer
+                + $col-span-lydian
+                + 1 //spacer
+                + $col-span-mixolydian
+                + 1 //spacer
+                + $col-span-aeolian
+                + 1 //spacer
+                )
+                / span $col-span-locrian;
+}
+
+@mixin shape-ionian($row-offset: 0, $col-offset: 0) {
   .ionian {
-    color: $ionian-text;
-    background-color: $ionian-bg;
-    border: 1px solid #{$ionian-text};
-
     justify-content: start;
     align-items: start;
 
@@ -86,12 +251,8 @@
   }
 }
 
-@mixin dorian($row-offset: 0, $col-offset: 0) {
+@mixin shape-dorian($row-offset: 0, $col-offset: 0) {
   .dorian {
-    color: $dorian-text;
-    background-color: $dorian-bg;
-    border: 1px solid #{$dorian-text};
-    
     justify-content: end;
     align-items: start;
 
@@ -172,12 +333,8 @@
   }
 }
 
-@mixin phrygian($row-offset: 0, $col-offset: 0) {
+@mixin shape-phrygian($row-offset: 0, $col-offset: 0) {
   .phrygian {
-    color: $phrygian-text;
-    background-color: $phrygian-bg;
-    border: 1px solid #{$phrygian-text};
-    
     justify-content: end;
     align-items: end;
 
@@ -258,12 +415,8 @@
   }
 }
 
-@mixin lydian($row-offset: 0, $col-offset: 0) {
+@mixin shape-lydian($row-offset: 0, $col-offset: 0) {
   .lydian {
-    color: $lydian-text;
-    background-color: $lydian-bg;
-    border: 1px solid #{$lydian-text};
-    
     justify-content: start;
     align-items: end;
 
@@ -344,12 +497,8 @@
   }
 }
 
-@mixin mixolydian($row-offset: 0, $col-offset: 0) {
+@mixin shape-mixolydian($row-offset: 0, $col-offset: 0) {
   .mixolydian {
-    color: $mixolydian-text;
-    background-color: $mixolydian-bg;
-    border: 1px solid #{$mixolydian-text};
-    
     justify-content: start;
     align-items: start;
 
@@ -430,12 +579,8 @@
   }
 }
 
-@mixin aeolian($row-offset: 0, $col-offset: 0) {
+@mixin shape-aeolian($row-offset: 0, $col-offset: 0) {
   .aeolian {
-    color: $aeolian-text;
-    background-color: $aeolian-bg;
-    border: 1px solid #{$aeolian-text};
-    
     justify-content: end;
     align-items: start;
 
@@ -516,12 +661,8 @@
   }
 }
 
-@mixin locrian($row-offset: 0, $col-offset: 0) {
+@mixin shape-locrian($row-offset: 0, $col-offset: 0) {
   .locrian {
-    color: $locrian-text;
-    background-color: $locrian-bg;
-    border: 1px solid #{$locrian-text};
-
     justify-content: end;
     align-items: end;
 
