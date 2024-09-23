@@ -1,0 +1,4 @@
+$rows-per-string: 2;
+
+$row-count: 1 // Mode name
+            + $rows-per-string * 6; // 2 per string
